@@ -1,42 +1,111 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/*HEADBOARD*/
+.header{
+  background-color: var(--color-dark-tomato);
+  padding:1em;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:center;
+  gap:1em;
+}
+.header-logo{
+  width:6.25em;
+  height:3.875rem;
+}
+.header-logo-image{
+width: 100%;
+}
+.header-menu{
+  display: none;
+  background: var(--color-light-gray);
+}
+.header-menu-svg{
+  color:var(--color-light-gray);
+  
+}
+.header-ul{
+  font-family: var(--tipo-principal1);
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  gap:2em;
+}
+.header-ul-li{
+  color: var(--color-light-gray);
+  font-weight: 500;
+  text-transform:uppercase;
+  letter-spacing: 0.0625em;
+}
+
+
+/*FOOTER*/
+.footer{
+  font-family: var(--tipo-principal1);
+  line-height: 1.5;
+  background-color: #e63f41;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:1em;
+  padding: 1.5em 0;
+  margin: 1em 0;
+}
+.footer-logo{
+  font-size:1rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.footer-logo-div{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo-h2{
+  text-transform:uppercase;
+}
+.footer-address{
+  font-size: 1em;
+}
+.footer-p{
+  letter-spacing:0.0625em;
+}
+.footer-p-span{
+  font-weight: 800;
+  padding-right: 0.5em;
+}
+.footer-rrss{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+  gap:1em;
+}
+.footer-rrss-li{
+  width: 1.875em;
+  height:1.875em;
+}
+.footer-rrss-li-a{
   text-align: center;
+  border-radius:1.5625em;
+  background-color:var(--color-light-gray);
+}
+.footer-rrss-li-a-img{
+  width: 100%;
+}
+.footer-legend{
+  font-size: 0.875rem;  
+}
+.footer-legend-p{
+  letter-spacing:0.0625em;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.footer-line{
+  width: 100vw;
+  height: 0.625em;
+  border-bottom:solid 0.0635em var(--color-light-gray);
 }
