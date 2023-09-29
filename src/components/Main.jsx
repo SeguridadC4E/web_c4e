@@ -1,8 +1,12 @@
 const Main = () => {
   return (
     <main className='main'>
-      <div>Este es contenido principal</div>
-      <img src='https://drive.google.com/file/d/1pfCPPJ893v2A-qrMj9K4G4mJx0AxP6Ro/view' alt='imagen del logo de la empresa' />
+      <section className='section-front'>
+        <div className='front-div'>
+          <h2 className='front-div-h2'>seguridad</h2>
+          <h2 className='front-div-h2 front-div-h2-space'>privada</h2>
+        </div>
+      </section>
     </main>
   )
 }
