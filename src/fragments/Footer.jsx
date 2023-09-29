@@ -1,18 +1,13 @@
-import c4eLogo from './../assets/logoC4E.jpg'
 import instagramSvg from './../assets/instagram.svg'
 import facebookSvg from './../assets/facebook.svg'
 import questionSvg from './../assets/question-circle.svg'
+import Logo from './Logo'
 
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className='footer-logo'>
-        <div className='footer-logo-div'>
-          <img src={c4eLogo} alt='logo de la empresa de seguridad C4E' className='logo' />
-          <h2 className='footer-logo-h2'>cia ltda</h2>
-        </div>
-        <h2 className='footer-logo-h2'>Seguridad</h2>
-      </div>
+      <Logo />
+
       <section className='footer-address'>
         <p className='footer-p'><span className='footer-p-span'>Dirección:</span>Av. las Américas</p>
         <p className='footer-p'><span className='footer-p-span'>Celular:</span>+593 99 579 4014</p>
