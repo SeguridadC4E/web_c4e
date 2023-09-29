@@ -73,7 +73,8 @@
 .footer{
   font-family: var(--tipo-principal1);
   line-height: 1.5;
-  background-color: #e63f41;
+  background-color: var(--color-dark);
+  color: var(--color-light-gray);
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -82,8 +83,18 @@
   padding: 1.5em 0;
   margin: 1em 0;
 }
+.footer-content{
+  width: 100vw;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  gap: 1em;
+  padding: 0 2em;
+}
 .footer-address{
-  font-size: 1em;
+  width:25%;
+  font-size: 14px;
 }
 .footer-p{
   letter-spacing:0.0625em;
@@ -93,9 +104,10 @@
   padding-right: 0.5em;
 }
 .footer-rrss{
+  width: 25%;
   display: flex;
   flex-direction:row;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   gap:1em;
 }
