@@ -35,6 +35,7 @@
   width: 100vw;
   background-color: var(--color-dark);
   padding:1em 0;
+  position: fixed;
 }
 
 .header-content{
@@ -70,20 +71,18 @@
 
 /*MAIN PAGE*/
 .main{
-  padding:  0;
 }
 .section-front{
-  background-color: mediumorchid;
-  background: url(./assets/img-content/111.jfif) no-repeat;
+  background: url(./assets/img-content/111.jpg) no-repeat fixed;
 
   display: flex;
-  flex-direction: row;
-  justify-content: start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   width: 100vw;
   height: 100vh;
-  padding-left:1em ;
+  padding:25vh ;
 }
 
 .front-div{
@@ -98,6 +97,16 @@
 }
 .front-div-h2 .front-div-h2--space{
   letter-spacing: 1rem;
+}
+
+.front-button{
+  cursor: pointer;
+  background-color:var(--color-dark-tomato);
+  border-radius: 65px;
+  padding: 1em;
+  text-transform: uppercase;
+  color: var(--color-light-gray);
+  font-weight: 700;
 }
 
 /*FOOTER*/
