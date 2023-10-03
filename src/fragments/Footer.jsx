@@ -38,13 +38,13 @@ const Footer = () => {
         </ul>
         <Logo />
         <section className='footer-address'>
-          <p className='footer-p'><span className='footer-p-span'>Dirección:</span>Av. las Américas</p>
+          <p className='footer-p'><span className='footer-p-span'>Dirección:</span>Ambato - Ecuador</p>
           <p className='footer-p'><span className='footer-p-span'>Celular:</span>+593 99 579 4014</p>
           <p className='footer-p'><span className='footer-p-span'>Email:</span>seguridadc4e@gmail.com</p>
         </section>
       </div>
       <div className='footer-legend'>
-        <p className='footer-legend-p'>Power of @Henry_Azogue and love</p>
+        <p className='footer-legend-p'>Power of @HenryDev</p>
       </div>
       <div className='footer-line' />
     </footer>

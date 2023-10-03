@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*font family Lato*/
 
 @font-face {
@@ -199,7 +200,7 @@ li {
 
 /* Configuramos anclas suaves */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
@@ -261,7 +262,7 @@ svg {
 body {
   min-height: 100vh;
   font-size: 100%;
-  font-family: var(--second-type);
+  font-family: var(--main-type);
   color: var(--color-dark);
   /* opcional */
   line-height: 1.4em;
