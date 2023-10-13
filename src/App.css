@@ -265,6 +265,7 @@
   justify-content:space-around;
   align-items:center;
   gap: 1em;
+
   padding: 1em;
 }
 
@@ -274,11 +275,17 @@
   align-items: center;
   gap: 1em;
 }
-.footer-p{}
-
+.footer-p{
+  letter-spacing: 1px;
+}
 
 .footer-line{
   background-color: var(--color-light-tomato);
   width: 100vw;
   height:1px;
+}
+
+.footer-legend{
+  font-size: 14px;
+  letter-spacing: 2px;
 }
