@@ -18,7 +18,7 @@ const Headboard = () => {
           <Link to='/'> Inicio</Link>
         </li>
         <li className='header-ul-li'>
-          <Link to='/sobre-nosotros'>Sobre Nosotros</Link>
+          <Link to='/sobre-nosotros'>Conócenos</Link>
         </li>
         <li className='header-ul-li'>
           <Link to='/servicios'>Servicios</Link>

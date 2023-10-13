@@ -240,10 +240,6 @@
 .section-cards-description{}
 .section-cards-button{}
 
-
-
-
-
 /*FOOTER*/
 .footer{
   font-family: var(--tipo-principal1);
@@ -289,3 +285,53 @@
   font-size: .875rem;
   letter-spacing: .125rem;
 }
+
+
+/*PAGE-ABOUT*/
+.main-about{
+  padding: 5% 0;
+}
+.main-about-header{
+  color: var(--color-light-gray);
+  background-color: pink;
+  background-image: url(./assets/img-content/about-section-phrase.jpg);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 3em 2em;
+
+  height: 75vh;
+}
+.main-about-header-title{
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: .0938rem;
+  text-transform: uppercase;
+  padding-top: 2em;
+}
+.main-about-header-text{
+  font-size: 1.125rem;
+  font-style: italic;
+  text-align: center;
+  width: 80%;
+  padding-bottom: 2em;
+}
+.main-div{}
+.main-about-section-mission{}
+.main-about-section-mission-div{}
+.main-about-section-visio-div{}
+.main-about-section-mission-div{}
+.main-about-section-mission-img{}
+.main-about-section-phrase{}
+.main-about-section-phrase-h2{}
+.main-about-section-phrase-img{}
+.main-about-section-vision{}
+.main-about-section-vision-div{}
+.main-about-section-visio-div{}
+.main-about-section-vision-div{}
+.main-about-section-vision-img{}
+.main-about-section-partners{}
+.main-about-section-partners-h3{}
