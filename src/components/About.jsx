@@ -1,22 +1,31 @@
 import aboutImagePhrase from './../assets/img-content/about-section-phrase.jpg'
+import trustAbout from './../assets/img-content/trust-about.jpg'
 
 const About = () => {
   return (
     <main className='main-about'>
       <header className='main-about-header'>
-        <h3 className='main-about-header-title'>acerca de nosotros</h3>
-        <p className='main-about-header-text'>Nuestro compromiso es brindar a nuestros clientes la tranquilidad necesaria para que puedan llevar a cabo sus actividades cotidianas con total confianza en su seguridad.</p>
+        <div className='main-about-header-div'>
+          <h3 className='main-about-header-title'>seguridad</h3>
+          <h3 className='main-about-header-title'>protección</h3>
+          <h3 className='main-about-header-title'>tecnología en seguridad</h3>
+        </div>
+        <p className='main-about-header-text'>Brindamos a nuestros clientes la tranquilidad necesaria para que puedan llevar a cabo sus actividades cotidianas con total confianza en su seguridad.</p>
       </header>
+      <h2 className='main-abou-h2'>acerca de nosotros</h2>
       <section className='main-about-section-mission'>
         <div className='main-about-section-mission-div'>
-          <h3 className='main-about-section-visio-div-h3'>nuestra misión</h3>
-          <p className='main-about-section-mission-div-p'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non rerum porro officiis similique quisquam sequi placeat ipsa inventore velit praesentium nihil ad distinctio recusandae magnam, fuga consequuntur expedita, deserunt deleniti.Modi rerum maxime debitis at distinctio quisquam, voluptatem necessitatibus praesentium recusandae. Distinctio, culpa? Dicta, soluta. Est minima sed veritatis, explicabo debitis asperiores labore voluptates assumenda corrupti, autem, at cupiditate. Saepe. Omnis temporibus consequuntur, officiis mollitia, incidunt provident saepe dolorum non ex a fugit ut ad deserunt atque commodi natus suscipit veniam. Laboriosam veritatis rerum maiores impedit tempora veniam, ex error.Hic facere maxime inventore tenetur corrupti reiciendis delectus consequuntur dolorum consequatur nemo ratione quaerat et eligendi recusandae expedita minima atque aliquam laboriosam, tempore rem sint libero culpa possimus. Adipisci, placeat? Voluptate nemo, in earum enim molestiae consectetur officiis. Id optio dolor reiciendis. Voluptatibus vero eligendi quasi illum tempore, nesciunt labore eaque maxime sit libero mollitia, eveniet, reiciendis veniam eos. Explicabo?</p>
+          <h3 className='main-about-section-mision-div-h3'>nuestra misión</h3>
+          <p className='main-about-section-mission-div-p'>Lorem similique quisquam sequi placeat ipsa inventore velit praesentium nihil ad distinctio recusandae magnam, fuga consequuntur expedita, deserunt deleniti.Modi rerum maxime debitis at distinctio quisquam, voluptatem necessitatibus praesentium recusandae. Distinctio, culpa? Dicta, soluta. Est minima sed veritatis, explicabo debitis asperiores labore voluptates assumenda corrupti, autem, at cupiditate. Saepe. Omnis temporibus consequuntur, officiis mollitia, incidunt provident saepe dolorum non ex a fugit ut ad deserunt atque commodi natus suscipit veniam. Laboriosam veritatis rerum maiores impedit tempora veniam, ex error.Hic facere maxime inventore tenetur corrupti reiciendis delectus consequuntur dolorum consequatur nemo ratione quaerat et eligendi recusandae expedita minima atque aliquam laboriosam, tempore rem sint libero culpa possimus. Adipisci, placeat? Voluptate nemo, in earum enim molestiae consectetur officiis. Id optio dolor reiciendis. Voluptatibus vero eligendi quasi illum tempore, nesciunt labore eaque maxime sit libero mollitia, eveniet, reiciendis veniam eos. Explicabo?</p>
         </div>
         <img src={aboutImagePhrase} alt='image abot' className='main-about-section-mission-img' />
       </section>
       <section className='main-about-section-phrase'>
-        <h2 className='main-about-section-phrase-h2'>Nuestro trabajo es brindar a nuestros clientes la tranquilidad necesaria para que puedan llevar a cabo sus actividades</h2>
-        <img src={aboutImagePhrase} alt='image abot' className='main-about-section-phrase-img' />
+        <img src={trustAbout} alt='image abot' className='main-about-section-phrase-img' />
+        <div className='main-about-section-phrase-div'>
+          <h2 className='main-about-section-phrase-h2'><span>"</span>Quien tiene confianza en sí mismo va a ganar la confianza de los demás<span>"</span></h2>
+          <p className='main-about-section-phrase-p'>(Leib Lazarow)</p>
+        </div>
       </section>
       <section className='main-about-section-vision'>
         <div className='main-about-section-vision-div'>
