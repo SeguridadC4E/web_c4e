@@ -129,14 +129,21 @@
 :root {
   /*color*/
   --color-dark-coffee: #400106;
+  --color-logo-dark: #000002;
   --color-dark-tomato: #e63f41;
   --color-light-tomato: #F24444;
   --color-light-gray: #F2F2F2;
-  --color-dark: #000002;
+  --color-text-image: rgba(255, 255, 255, 0.966);
+  --color-text-title: rgb(46, 40, 34);
+  --color-text-paragraph-context: rgb(56, 48, 40);
+  --color-text-paragraph: rgb(44, 38, 32);
+  --color-text-paragraph-card: rgb(56, 48, 40);
+  --color-box-shadow: rgba(0,0,0,.2);
   
   /* Tipografía */
   --main-type: 'Lato', sans-serif;
-  --second-type: 'Roboto', sans-serif; 
+  --second-type: 'Roboto', sans-serif;
+  --font-family-phrase: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Las adaptamos al modo oscuro */
@@ -260,6 +267,7 @@ svg {
 
 /* Configuramos la tipografía para toda la web */
 body {
+  background: white;
   min-height: 100vh;
   font-size: 100%;
   font-family: var(--main-type);
