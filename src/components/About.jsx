@@ -1,4 +1,5 @@
 import trustAbout from './../assets/img-content/trust-about.jpg'
+import westernUnion from './../assets/image-partners/western-union.jpeg'
 
 const About = () => {
   return (
@@ -46,9 +47,47 @@ const About = () => {
       <section className='page-about-section-partners'>
         <h3 className='page-about-section-partners-h3'>nuestros clientes</h3>
         <div className='page-about-section-div-partners'>
-          <img src='image1.jpg' alt='Image 1' className='page-about-section-div-parthers-img' />
-          <img src='image2.jpg' alt='Image 2' className='page-about-section-div-parthers-img' />
-          <img src='image3.jpg' alt='Image 3' className='page-about-section-div-parthers-img' />
+          <ul className='page-about-section-div-partners-ul'>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+            <li className='page-about-section-div-partners-ul-li'>
+              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+            </li>
+          </ul>
         </div>
       </section>
     </main>
