@@ -1,5 +1,4 @@
 import trustAbout from './../assets/img-content/trust-about.jpg'
-import westernUnion from './../assets/image-partners/western-union.jpeg'
 import LogoScrolling from '../fragments/LogoScrolling'
 
 const About = () => {
@@ -48,50 +47,9 @@ const About = () => {
       <section className='page-about-section-partners'>
         <h3 className='page-about-section-partners-h3'>nuestros clientes</h3>
         <div className='page-about-section-div-partners'>
-          <ul className='page-about-section-div-partners-ul'>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-            <li className='page-about-section-div-partners-ul-li'>
-              <img src={westernUnion} alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-            </li>
-          </ul>
+          <LogoScrolling />
         </div>
       </section>
-      <LogoScrolling />
     </main>
   )
 }

@@ -459,11 +459,13 @@
 }
 
 .page-about-section-partners{
-  padding: 1em 0;
+  padding-top: 1em;
+  padding-bottom: 2em;
 
 }
 .page-about-section-partners-h3{
   font-family:var(--second-type);
+  color: var(--color-text-paragraph-context);
   font-size:4rem;
   font-weight:700;
   text-transform:uppercase;
@@ -474,24 +476,24 @@
 
 
 .page-about-section-div-partners{
-  background-color: pink;
   width: 100%;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
   overflow: hidden;
 }
 
-.page-about-section-div-partners-ul{
+.fragment-logo-scrollingd-ul{
   display: flex;
-  gap: 1em;
-  animation: scrolling 200s linear infinite;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  animation: scrolling 25s linear infinite;
 }
-.page-about-section-div-partners-ul-li{
+.fragment-logo-scrollingd-ul-li{
   padding: 1em 0;
   width: 250px;
   flex-shrink: 0;
 }
-.page-about-section-div-partners-ul-li-img{
+.fragment-logo-scrollingd-ul-li-img{
   width: 100%;
 }
 @keyframes scrolling {
@@ -499,6 +501,6 @@
     transform: translateX(0);
   }
   100%{
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }

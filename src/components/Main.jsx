@@ -34,6 +34,9 @@ const Main = () => {
           </footer>
         </div>
       </section>
+      <section className='section-services'>
+        <h3 className='section-services-title'>nuestros servicios</h3>
+      </section>
     </main>
   )
 }
