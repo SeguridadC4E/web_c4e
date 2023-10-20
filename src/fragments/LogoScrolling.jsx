@@ -8,9 +8,11 @@ const LogoScrolling = () => {
 
   return (
     <ul className='page-about-section-div-partners-ul'>
-      <li className='page-about-section-div-partners-ul-li'>
-        <img src='./assets/only-logo-c4e.png' alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
-      </li>
+		{ logoScroll.map =(id, alter, address)=>
+<li className='page-about-section-div-partners-ul-li'>
+        	  <img src='./assets/only-logo-c4e.png' alt='Image 3' className='page-about-section-div-parthers-ul-li-img' />
+      		</li>
+			}
     </ul>
   )
 }
