@@ -1,5 +1,6 @@
 import trustAbout from './../assets/img-content/trust-about.jpg'
 import westernUnion from './../assets/image-partners/western-union.jpeg'
+import LogoScrolling from '../fragments/LogoScrolling'
 
 const About = () => {
   return (
@@ -90,6 +91,7 @@ const About = () => {
           </ul>
         </div>
       </section>
+      <LogoScrolling />
     </main>
   )
 }
