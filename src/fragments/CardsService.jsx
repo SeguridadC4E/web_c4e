@@ -1,12 +1,22 @@
 import { Link } from 'react-router-dom'
+import { GlobalContext } from '../provider/Provider'
+import { useContext } from 'react'
 
 const CardsServices = () => {
+  const { main } = useContext(GlobalContext)
+  const { sectionServices } = main
+  console.log(sectionServices)
+
   return (
-    <ul className='fragment-car-services'>
-      <li className='fragment-car-services-ul-li'>
-        <img src='https://images.unsplash.com/photo-1581568736305-49a04e012c13?auto=format&fit=crop&q=80&w=1547&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='imagen de una guardia de seguridad' className='fragment-car-services-ul-li-img' />
-        <Link className='fragment-card-services-ul-li-link'>guardias de seguridad</Link>
-      </li>
+    <ul className='fragment-car-services-ul'>
+      {sectionServices.map((service) =>
+        <li key={service?.id} className='fragment-car-services-ul-li'>
+          <div className='fragment-car-services-ul-li-div'>
+            <img src={service?.imageBackground} alt={service?.imageAlter} className='fragment-car-services-ul-li-div-img' />
+            <Link to='/servicios' className='fragment-card-services-ul-li-div-link'>{service?.title}</Link>
+          </div>
+        </li>
+      )}
     </ul>
   )
 }

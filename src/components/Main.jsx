@@ -39,6 +39,12 @@ const Main = () => {
         <h3 className='section-services-title'>nuestros servicios</h3>
         <CardsServices />
       </section>
+      <section className='section-contact'>
+        <h3 className='section-contact-title'>contactanos</h3>
+      </section>
+      <section className='section-extra'>
+        <h3 className='section-extra-title'>extra</h3>
+      </section>
     </main>
   )
 }
