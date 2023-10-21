@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Rrss from '../fragments/Rrss'
+import CardsServices from '../fragments/CardsService'
 
 const Main = () => {
   return (
@@ -36,6 +37,7 @@ const Main = () => {
       </section>
       <section className='section-services'>
         <h3 className='section-services-title'>nuestros servicios</h3>
+        <CardsServices />
       </section>
     </main>
   )
