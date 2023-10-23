@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
       <div className='footer-line' />
       <div className='footer-legend'>
-        <p className='footer-legend-p'>Designed and Created by @Henry-Azogue</p>
+        <p className='footer-legend-p'>Created by @HenryDev</p>
       </div>
     </footer>
   )

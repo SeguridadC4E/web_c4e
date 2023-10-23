@@ -23,7 +23,7 @@ const Services = () => {
             <p className='page-services-section-body-odd-info-paragraph'>{cardServices[0].information.description}</p>
             <Link
               to='/services/:id'
-              className='page-services-section-body-odd-info-link'
+              className='page-services-section-body-info-link'
               rel={cardServices[0].button.rel}
               referrerPolicy={cardServices[0].button.referrerPolicy}
               target={cardServices[0].button.target}
@@ -40,7 +40,7 @@ const Services = () => {
             <p className='page-services-section-body-even-info-paragraph'>{cardServices[1].information.description}</p>
             <Link
               to='/services/:id'
-              className='page-services-section-body-even-info-link'
+              className='page-services-section-body-info-link'
               rel={cardServices[1].button.rel}
               referrerPolicy={cardServices[1].button.referrerPolicy}
               target={cardServices[1].button.target}
@@ -57,7 +57,7 @@ const Services = () => {
             <p className='page-services-section-body-odd-info-paragraph'>{cardServices[2].information.description}</p>
             <Link
               to='/services/:id'
-              className='page-services-section-body-odd-info-link'
+              className='page-services-section-body-info-link'
               rel={cardServices[2].button.rel}
               referrerPolicy={cardServices[2].button.referrerPolicy}
               target={cardServices[2].button.target}
@@ -74,7 +74,7 @@ const Services = () => {
             <p className='page-services-section-body-even-info-paragraph'>{cardServices[3].information.description}</p>
             <Link
               to='/services/:id'
-              className='page-services-section-body-even-info-link'
+              className='page-services-section-body-info-link'
               rel={cardServices[3].button.rel}
               referrerPolicy={cardServices[3].button.referrerPolicy}
               target={cardServices[3].button.target}
@@ -91,7 +91,7 @@ const Services = () => {
             <p className='page-services-section-body-odd-info-paragraph'>{cardServices[4].information.description}</p>
             <Link
               to='/services/:id'
-              className='page-services-section-body-odd-info-link'
+              className='page-services-section-body-info-link'
               rel={cardServices[4].button.rel}
               referrerPolicy={cardServices[4].button.referrerPolicy}
               target={cardServices[4].button.target}

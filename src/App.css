@@ -626,20 +626,7 @@
   font-size: .875rem;
   letter-spacing: .0625rem;
 }
-.page-services-section-body-odd-info-link{
-  color: var(--color-text-title);
-  font-family: var(--second-type);
-  font-size: .875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  border: solid 1px red;
-  text-decoration: underline;
-}
-.page-services-section-body-odd-info-link:hover{
-  font-weight: 700;
-  font-size: .9375rem;
-  transition: all 1.5s ease;
-}
+
 /*
 
 */
@@ -683,16 +670,37 @@
   font-size: .875rem;
   letter-spacing: .0625rem;
 }
-.page-services-section-body-even-info-link{
-  color: var(--color-text-title);
+.page-services-section-body-info-link{
+  color: var(--color-light-gray);
+  background-color: var(--color-light-tomato);
   font-family: var(--second-type);
-  font-size: .875rem;
+  font-size: .9rem;
   font-weight: 600;
   text-transform: uppercase;
-  text-decoration: underline;
+  padding: 0.5em;
 }
-.page-services-section-body-even-info-link:hover{
+.page-services-section-body-info-link:hover{
   font-weight: 700;
-  font-size: .9375rem;
+  font-size: .93rem;
   transition: all 1.5s ease;
+}
+
+
+
+/*
+MODE RESPONSIVE
+*/
+@media only screen and ( max-width: 48rem ){
+	.header{
+	}
+	.header-menu{
+		display: block;
+	}
+	.header-menu-svg{
+    color: white;
+  } 
+	.header-ul{
+		display: none;
+	}
+	.header-ul-li{}
 }
