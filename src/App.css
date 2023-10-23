@@ -37,6 +37,31 @@
 }
 
 
+.fragment-logo-scrollingd-ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  animation: scrolling 25s linear infinite;
+}
+.fragment-logo-scrollingd-ul-li{
+  padding: 1em 0;
+  width: 250px;
+  flex-shrink: 0;
+}
+.fragment-logo-scrollingd-ul-li-img{
+  width: 100%;
+}
+@keyframes scrolling {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+
 /*headerboard*/
 .header{
   background-color: var(--color-logo-dark);
@@ -527,27 +552,146 @@
   overflow: hidden;
 }
 
-.fragment-logo-scrollingd-ul{
+/*PAGE/SERVICES*/
+.page-services{
+  color: var(--color-light-gray);
+  background:linear-gradient(rgba(100, 100, 159, 0.242), rgba(255, 255, 0, 0.087)), url(https://images.unsplash.com/photo-1461685265823-f8d5d0b08b9b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
-  animation: scrolling 25s linear infinite;
+  gap: 1em;  
 }
-.fragment-logo-scrollingd-ul-li{
-  padding: 1em 0;
-  width: 250px;
-  flex-shrink: 0;
+.page-services-header-span-title{
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .3005em;
+  padding: 0.75em;
 }
-.fragment-logo-scrollingd-ul-li-img{
+
+.page-services-section{
+  padding: 5%;
+}
+.page-services-section-title{
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: .125em;
+  text-transform: uppercase;
+  padding: 2em 12%;
+}
+.page-services-section-body-odd{
+  display: grid;
+  grid-template-columns: 45% 50% 5%;
+  gap:1em;
+  margin-bottom: 2em;
+}
+.page-services-section-body-odd-img{
   width: 100%;
+  height: 400px;
 }
-@keyframes scrolling {
-  0%{
-    transform: translateX(0);
-  }
-  100%{
-    transform: translateX(100%);
-  }
+.page-services-section-body-odd-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1em;
+}
+.page-services-section-body-odd-info-title{
+  color: var(--color-text-services-span);
+  font-family: var(--second-type);
+  font-weight: 700;
+  letter-spacing: .0625rem;
+  text-transform: uppercase;
+}
+.page-services-section-body-odd-info-title-span{
+  font-size: 5rem;
+}
+.page-services-section-body-odd-info-subtitle{
+  color: var(--color-text-title);
+  font-family: var(--second-type);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.page-services-section-body-odd-info-paragraph{
+  color: var(--color-text-services-span);
+  font-family: var(--font-family-phrase);
+
+  font-size: .875rem;
+  letter-spacing: .0625rem;
+}
+.page-services-section-body-odd-info-link{
+  color: var(--color-text-title);
+  font-family: var(--second-type);
+  font-size: .875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.page-services-section-body-odd-info-link:hover{
+  font-weight: 700;
+  font-size: .9375rem;
+  transition: all 1.5s ease;
+}
+/*
+
+*/
+.page-services-section-body-even{
+  display: grid;
+  grid-template-columns: 5% 50% 45%;
+  margin-bottom: 2em;
+}
+.page-services-section-body-even-img{
+  width: 100%;
+  height: 400px;
+}
+.page-services-section-body-even-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1em;
+}
+.page-services-section-body-even-info-title{
+  color: var(--color-text-services-span);
+  font-family: var(--second-type);
+  font-weight: 700;
+  letter-spacing: .0625rem;
+  text-transform: uppercase;
+}
+.page-services-section-body-even-info-title-span{
+  font-size: 5rem;
+}
+.page-services-section-body-even-info-subtitle{
+  color: var(--color-text-title);
+  font-family: var(--second-type);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.page-services-section-body-even-info-paragraph{
+  color: var(--color-text-services-span);
+  font-family: var(--font-family-phrase);
+
+  font-size: .875rem;
+  letter-spacing: .0625rem;
+}
+.page-services-section-body-even-info-link{
+  color: var(--color-text-title);
+  font-family: var(--second-type);
+  font-size: .875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.page-services-section-body-even-info-link:hover{
+  font-weight: 700;
+  font-size: .9375rem;
+  transition: all 1.5s ease;
 }

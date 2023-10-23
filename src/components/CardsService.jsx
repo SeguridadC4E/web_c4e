@@ -3,9 +3,8 @@ import { GlobalContext } from '../provider/Provider'
 import { useContext } from 'react'
 
 const CardsServices = () => {
-  const { main } = useContext(GlobalContext)
-  const { sectionServices } = main
-  console.log(sectionServices)
+  const { pageMain } = useContext(GlobalContext)
+  const { sectionServices } = pageMain
 
   return (
     <ul className='fragment-car-services-ul'>
