@@ -632,6 +632,7 @@
   font-size: .875rem;
   font-weight: 600;
   text-transform: uppercase;
+  border: solid 1px red;
   text-decoration: underline;
 }
 .page-services-section-body-odd-info-link:hover{
