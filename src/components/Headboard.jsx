@@ -1,6 +1,6 @@
 import menuList from './../assets/list.svg'
 import { Link } from 'react-router-dom'
-import Logo from './Logo'
+import Logo from '../fragments/Logo'
 
 const Headboard = () => {
   return (

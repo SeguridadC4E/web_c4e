@@ -13,7 +13,7 @@ const CardsServices = () => {
         <li key={service?.id} className='fragment-car-services-ul-li'>
           <div className='fragment-car-services-ul-li-div'>
             <img src={service?.imageBackground} alt={service?.imageAlter} className='fragment-car-services-ul-li-div-img' />
-            <Link to='/servicios' className='fragment-card-services-ul-li-div-link'>{service?.title}</Link>
+            <Link to='/servicios/:id' className='fragment-card-services-ul-li-div-link'>{service?.title}</Link>
           </div>
         </li>
       )}

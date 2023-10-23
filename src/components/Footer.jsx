@@ -1,4 +1,4 @@
-import Logo from './Logo'
+import Logo from '../fragments/Logo'
 import Rrss from './Rrss'
 
 const Footer = () => {

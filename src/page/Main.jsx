@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
-import Rrss from '../fragments/Rrss'
-import CardsServices from '../fragments/CardsService'
+import CardsServices from '../components/CardsService'
 
 const Main = () => {
   return (
@@ -31,7 +30,6 @@ const Main = () => {
           </section>
           <footer className='section-about-info-footer'>
             <Link to='/sobre-nosotros' className='about-info-section-button'>seguir leyendo</Link>
-            <Rrss />
           </footer>
         </div>
       </section>

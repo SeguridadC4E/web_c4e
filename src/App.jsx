@@ -1,12 +1,13 @@
 import './App.css'
 import { HashRouter, Route, Routes } from 'react-router-dom'
-import About from './components/About'
-import Contact from './components/Contact'
-import Services from './components/Services'
+import Main from './page/Main'
+import About from './page/About'
+import Services from './page/Services'
+import DetailServices from './page/DetailServices'
+import Contact from './page/Contact'
 import Gallery from './components/Gallery'
-import Footer from './fragments/Footer'
-import Main from './components/Main'
-import Headboard from './fragments/Headboard'
+import Footer from './components/Footer'
+import Headboard from './components/Headboard'
 
 function App () {
   return (
@@ -16,7 +17,7 @@ function App () {
         <Route path='/' element={<Main />} />
         <Route path='/sobre-nosotros' element={<About />} />
         <Route path='/servicios' element={<Services />}>
-          <Route path='/servicios/id:' element={<Services />} />
+          <Route path='/servicios/id:' element={<DetailServices />} />
         </Route>
         <Route path='/galeria' element={<Gallery />} />
         <Route path='/contacto' element={<Contact />} />
