@@ -1,35 +1,46 @@
-import menuList from './../assets/list.svg'
+import menuHamburger from './../assets/svg/menu-Hamburger.svg'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import Logo from '../fragments/Logo'
 
 const Headboard = () => {
+  const [menu, setMenu] = useState(false)
+
+  const toggleMenu = () => {
+    setMenu(!menu)
+  }
   return (
     <header className='header'>
       <Logo />
-      <div className='header-menu'>
+      <button
+        onClick={toggleMenu}
+        className='header-menu'
+      >
         <img
           className='header-menu-svg'
-          src={menuList}
+          src={menuHamburger}
           alt='icono del boton de menu de navegacion'
         />
-      </div>
-      <ul className='header-ul'>
-        <li className='header-ul-li'>
-          <Link to='/'> Inicio</Link>
-        </li>
-        <li className='header-ul-li'>
-          <Link to='/sobre-nosotros'>Conócenos</Link>
-        </li>
-        <li className='header-ul-li'>
-          <Link to='/servicios'>Servicios</Link>
-        </li>
-        <li className='header-ul-li'>
-          <Link to='/galeria'>Galeria</Link>
-        </li>
-        <li className='header-ul-li'>
-          <Link to='/contacto'>Contacto</Link>
-        </li>
-      </ul>
+      </button>
+      <nav className={`header-nav ${menu ? 'isActive' : ''}`}>
+        <ul className='header-ul'>
+          <li className='header-ul-li'>
+            <Link to='/'> Inicio</Link>
+          </li>
+          <li className='header-ul-li'>
+            <Link to='/sobre-nosotros'>Conócenos</Link>
+          </li>
+          <li className='header-ul-li'>
+            <Link to='/servicios'>Servicios</Link>
+          </li>
+          <li className='header-ul-li'>
+            <Link to='/galeria'>Galeria</Link>
+          </li>
+          <li className='header-ul-li'>
+            <Link to='/contacto'>Contacto</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }

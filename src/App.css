@@ -68,10 +68,9 @@
   box-shadow: 0 .125rem .625rem 0 rgba(0,0,0,.4), 0 .125rem .3125rem 0 rgba(0,0,0,.2); 
   
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 1em;
   
   position: sticky;
   top: 0;
@@ -82,8 +81,11 @@
 
 .header-menu{
   display: none;
+  cursor: pointer;
 }
 .header-menu-svg{ 
+  width: 25px;
+  height: 35px;
 }
 .header-ul{
   color: var(--color-light-gray);
@@ -92,10 +94,9 @@
   font-size: .9375rem;
 
   display:flex;
-  flex-direction:row;
-  justify-content:space-between;
+  flex-flow: row nowrap;
+  justify-content:flex-end;
   align-items:center;
-  gap:2em;
 
   padding:0 1em;
 }
@@ -712,12 +713,12 @@ MODE RESPONSIVE
 	}
 	.header-menu{
 		display: block;
+    width: 25px;
+    height: 35px;
 	}
-	.header-menu-svg{
-    color: white;
-  } 
 	.header-ul{
-		display: none;
+		flex-direction: column-reverse;
 	}
 	.header-ul-li{}
+
 }
