@@ -34,7 +34,10 @@ const Main = () => {
         </div>
       </section>
       <section className='section-services'>
-        <h3 className='section-services-title'>nuestros servicios</h3>
+        <div className='section-services-content'>
+          <h2 className='section-services-title'>nuestros servicios</h2>
+          <Link to='/servicios' className='section-services-content-link'>ver mas</Link>
+        </div>
         <CardsServices />
       </section>
       <section className='section-contact'>

@@ -262,6 +262,7 @@
   font-weight: 500;
 }
 .section-about-info-body-p{
+  color: var(--color-text-title);
   letter-spacing: .0625em;
   padding-bottom: 0.5em;
 }
@@ -293,7 +294,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em 5%;
+  padding: 3em 5%;
+}
+.section-services-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.section-services-content-link{
+  color: var(--color-text-paragraph-card);
+  font-size: .8125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.section-services-content-link:hover{
+  text-decoration: underline;
+  color: var(--color-light-tomato);
+  transition: all 1s ease;
 }
 .section-services-title{
   color: var(--color-text-title);
@@ -301,7 +320,7 @@
   font-weight: 800;
   letter-spacing: .0938rem;
   text-transform: uppercase;
-  padding: 1em 0;
+  padding: 2em 0;
 }
 
 .section-contact{
@@ -391,7 +410,7 @@
   font-weight: 800;
   letter-spacing: .0938rem;
   text-transform: uppercase;
-  padding-top: 0.5em;
+  padding-top: 2em;
 }
 .page-about-header-text{
   font-family:var(--font-family-phrase);
@@ -437,6 +456,7 @@
   
 }
 .page-about-section-intro-div-p{
+  color: var(--color-text-services-span);
   letter-spacing: 1px;
 }
 
@@ -474,7 +494,7 @@
   padding: 0.75em 0;
 }
 .page-about-section-div-p{
-  color: var(--color-text-paragraph);
+  color: var(--color-text-services-span);
   padding:0.5em;
   letter-spacing: 1px;
 }
@@ -507,7 +527,7 @@
   padding: 0 0.25em;
 }
 .page-about-section-phrase-h2{
-
+  color: var(--color-text-image);
   font-family: var(--second-type);
   font-style:italic;
   font-size:1.5rem;
@@ -518,6 +538,7 @@
   
 }
 .page-about-section-phrase-p{
+  color: var(--color-light-gray);
   font-size: .875rem;
   text-transform: capitalize;
   text-align:end;
@@ -679,11 +700,7 @@
   text-transform: uppercase;
   padding: 0.5em;
 }
-.page-services-section-body-info-link:hover{
-  font-weight: 700;
-  font-size: .93rem;
-  transition: all 1.5s ease;
-}
+
 
 
 
