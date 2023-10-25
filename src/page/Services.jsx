@@ -5,7 +5,7 @@ import { GlobalContext } from '../provider/Provider'
 const Services = () => {
   const { pageServices } = useContext(GlobalContext)
   const { cardServices } = pageServices
-
+  console.log(cardServices)
   return (
     <>
       <div className='page-services'>

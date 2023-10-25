@@ -712,7 +712,7 @@ MODE RESPONSIVE
 	.header{
 	}
 	.header-menu{
-		display: block;
+		display: flex;
     width: 25px;
     height: 35px;
 	}
