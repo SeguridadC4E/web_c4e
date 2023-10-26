@@ -160,14 +160,51 @@ const bbdd = {
       {
         id: uuidv4(),
         image: {
-          imageService: 'https://images.unsplash.com/photo-1581087724844-037b13e16b0b?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-          imageAlter: 'imagen del servicio de monitore las 24 horas'
+          author: 'Tai Jyun Chang',
+          url: 'https://unsplash.com/es/@tai_jyun',
+          imageService: 'https://images.unsplash.com/photo-1560381328-696dda198bae?auto=format&fit=crop&q=80&w=1563&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          imageAlter: 'imagen de un señor que indica cómo funciona el monitoreo 24 horas'
         },
-        information: {
+        service: {
           number: '03',
           title: 'monitoreo',
           subtitle: 'monitoreo 24 horas',
-          description: 'Lorem es la descripcion del servicio de monitoreo de las 24 horas'
+          description: [
+            'Nuestros sistemas de monitoreo, operativos las 24 horas del día, los 7 días de la semana, nos permiten reaccionar de manera inmediata ante cualquier eventualidad. Estos sistemas están diseñados para dar seguimiento a una amplia gama de irregularidades que pueden surgir, incluyendo robos, situaciones de pánico, incendios, inundaciones o emergencias médicas.',
+            'Gracias a la vigilancia constante y a la tecnología de punta que utilizamos, somos capaces de detectar las señales de alarma en tiempo real. Esta detección temprana nos permite reaccionar de inmediato, minimizando el impacto de cualquier incidente y asegurando la seguridad y tranquilidad de nuestros clientes.'
+          ],
+          details: {
+            title: 'Monitoreo las 24/horas',
+            imagen: [
+              {
+                id: uuidv4(),
+                author: 'Tai Jyun Chang',
+                url: 'https://unsplash.com/es/@tai_jyun',
+                imageService: 'https://images.unsplash.com/photo-1560381328-696dda198bae?auto=format&fit=crop&q=80&w=1563&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                imageAlter: 'imagen de un señor que indica cómo funciona el monitoreo 24 horas'
+              },
+              {
+                id: uuidv4(),
+                author: 'Some Tale',
+                url: 'https://unsplash.com/es/@some_tale',
+                imagen: 'https://images.unsplash.com/photo-1599418176874-7bddcf1e13bb?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alter: 'imagen de una madre con su hijo detrás de un arbusto'
+              },
+              {
+                id: uuidv4(),
+                author: 'Pilar Rubio',
+                url: 'https://unsplash.com/es/@rubiopil',
+                imagen: 'https://images.unsplash.com/photo-1655847849132-036b4a1de044?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alter: 'imagen de una calle transitada segura'
+              }
+            ],
+            description: [
+              'Gracias a la vigilancia constante y a la tecnología de punta que utilizamos, somos capaces de detectar las señales de alarma en tiempo real. Esta detección temprana nos permite reaccionar de inmediato, minimizando el impacto de cualquier incidente y asegurando la seguridad y tranquilidad de nuestros clientes.',
+              'Este nivel de seguridad proactiva es un beneficio invaluable para nuestros clientes. Les permite continuar con sus actividades diarias con la confianza de saber que están protegidos por un sistema de monitoreo eficiente y confiable. Nuestro compromiso es brindarles un entorno seguro y protegido en todo momento.'
+            ],
+            subtile: 'Monitoreo 24/horas 7 días a la semana:',
+            company: ['Bancos', 'Cooperativas', 'Comercios', 'Residencias', 'Instituciones']
+          }
         },
         button: {
           title: 'más informarción',
@@ -179,6 +216,8 @@ const bbdd = {
       {
         id: uuidv4(),
         image: {
+          author: 'Jusdevoyage',
+          url: 'https://unsplash.com/es/@jusdevoyage',
           imageService: 'https://images.unsplash.com/photo-1591216105236-5ba45970702a?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           imageAlter: 'imagen del servicio de monitore motorizado'
         },
