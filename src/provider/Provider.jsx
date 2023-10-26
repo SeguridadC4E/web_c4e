@@ -225,7 +225,42 @@ const bbdd = {
           number: '04',
           title: 'monitoreo',
           subtitle: 'monitoreo motorizado',
-          description: 'Lorem es la descripcion del servicio de monitore motorizado'
+          description: [
+            'Nuestro dedicado equipo de profesionales se encarga de realizar monitoreos constantes en todas las áreas donde brindamos nuestros servicios. Este monitoreo se realiza siguiendo una ruta predefinida que abarca todos los lugares clave para garantizar la máxima seguridad.',
+            'En caso de activación de las alarmas, contamos con un especialista motorizado listo para responder. Este especialista está altamente capacitado y sigue un conjunto estricto de normas y procedimientos diseñados para disuadir a cualquier criminal que pueda poner en riesgo la integridad de nuestros clientes. Su rápida respuesta y su presencia en el lugar pueden ser cruciales para prevenir incidentes y garantizar la seguridad de nuestros clientes.'
+          ],
+          details: {
+            title: 'Monitoreo motorizado',
+            imagen: [
+              {
+                id: uuidv4(),
+                author: 'Jakob Owens',
+                url: 'https://unsplash.com/es/@jakobowens1',
+                image: 'https://images.unsplash.com/photo-1632187978208-3c1717e0f643?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alter: 'imagen del motorizado escoltando a un cliente importante'
+              },
+              {
+                id: uuidv4(),
+                author: 'Jakob Owens',
+                url: 'https://unsplash.com/es/@jakobowens1',
+                imagen: 'https://images.unsplash.com/photo-1644186194219-479cf0911e3f?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alter: 'imagen del motorizado realizando la ronda en una bar'
+              },
+              {
+                id: uuidv4(),
+                author: 'Jusdevoyage',
+                url: 'https://unsplash.com/es/@jusdevoyage',
+                image: 'https://images.unsplash.com/photo-1591216105236-5ba45970702a?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alter: 'imagen del servicio de monitore motorizado'
+              }
+            ],
+            description: [
+              'Cada supervisor tiene asignada una locación específica, donde realiza un recorrido exhaustivo para verificar que todo esté en orden. Su presencia no solo sirve para cambiar el estado del ambiente, sino también para asegurar que se mantenga la tranquilidad y el orden.',
+              'En caso de activación de las alarmas, contamos con un especialista motorizado listo para responder. Este especialista está altamente capacitado y sigue un conjunto estricto de normas y procedimientos diseñados para disuadir a cualquier criminal que pueda poner en riesgo la integridad de nuestros clientes. Su rápida respuesta y su presencia en el lugar pueden ser cruciales para prevenir incidentes y garantizar la seguridad de nuestros clientes.'
+            ],
+            subtile: 'Monitoreo por motorizado:',
+            company: ['Bancos', 'Cooperativas', 'Locales Comerciales', 'Residencias', 'Instituciones Financieras']
+          }
         },
         button: {
           title: 'más informarción',
@@ -237,14 +272,49 @@ const bbdd = {
       {
         id: uuidv4(),
         image: {
+          author: 'Florian Olivo',
+          url: 'https://unsplash.com/es/@florianolv',
           imageService: 'https://images.unsplash.com/photo-1570044389283-6713c3b1c48b?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-          imageAlter: 'imagen del servicio de sistemas de sistemas de seguridad'
+          imageAlter: 'imagen de camaras de seguridad'
         },
-        information: {
+        service: {
           number: '05',
           title: 'seguridad',
           subtitle: 'instalación de sistemas de seguridad',
-          description: 'Lorem es la descripcion del servicion de sistemas de seguridad'
+          description: [
+            '',
+            ''
+          ],
+          details: {
+            title: 'servicio de guardia de seguridad',
+            imagen: [
+              {
+                id: uuidv4(),
+                author: 'Jacek Janiczak',
+                url: 'https://unsplash.com/es/@jacekjaniczak',
+                imagen: 'https://images.unsplash.com/photo-1697040084093-905a66f3d23d?auto=format&fit=crop&q=80&w=1564&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alter: 'imagen de una casa vigilada con una camara'
+              },
+              {
+                id: uuidv4(),
+                author: 'André Spilborghs',
+                url: 'https://unsplash.com/es/@andrespil',
+                imagen: 'https://images.unsplash.com/photo-1530240852689-f7a9c6d9f6c7?auto=format&fit=crop&q=80&w=1370&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1576807100081-6e12175343c6?auto=format&fit=crop&q=80&w=1631&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alter: 'imagen de un tecnico instalando un cerco electrico'
+              },
+              {
+                id: uuidv4(),
+                author: 'David Cain',
+                url: 'https://unsplash.com/es/@davidcainphoto',
+                imagen: 'https://images.unsplash.com/photo-1665242043190-0ef29390d289?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                alter: 'imagen de un guardia de seguridad dentro de un banco'
+              }
+            ],
+            firstDescription: 'Contamos con un equipo de profesionales altamente calificados, especializados en garantizar la seguridad tanto de personas como de propiedades. Nuestro alcance se extiende a una variedad de entornos, desde residencias privadas hasta establecimientos comerciales y corporativos, en los que brindamos nuestros servicios de seguridad.',
+            secondDescription: 'Trabajamos en estrecha colaboración con nuestros clientes para entender sus necesidades específicas y proporcionar soluciones de seguridad personalizadas. Nuestro objetivo es superar las expectativas, asegurando que cada individuo y propiedad bajo nuestra protección esté seguro y bien cuidado.',
+            subtile: 'trabajamos con todo tipo de entidades comerciales',
+            company: ['bancos y cooperativas', 'centros comerciales', 'comercios e industrias', 'residencias e instituciones', 'resguardo en eventos festivos']
+          }
         },
         button: {
           title: 'más informarción',
