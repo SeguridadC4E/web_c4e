@@ -3,7 +3,22 @@ import { createContext } from 'react'
 
 const bbdd = {
   pageMain: {
-    sectionServices: [
+    sectionIntro: [ // ❓ agregar en el main
+      'Protegemos locales comerciales y residencias',
+      'Instalación y mantenimientos de sistemas de seguridad',
+      'Nuestro objetivo es proporcionar soluciones de seguridad integrales que protejan a nuestros clientes y les den tranquilidad. Gracias a nuestra experiencia y compromiso con la excelencia, somos un socio confiable en el ámbito de la seguridad'
+    ],
+    sectionAbout: [
+      { title: 'C4E' },
+      {
+        description:
+        [
+          'Una empresa de seguridad privada especializada en proporcionar protección para locales comerciales y garantizar la seguridad en residencias. Ofrecemos un sistema de monitoreo las 24 horas, siempre preparados para atender a nuestros clientes.',
+          'Además, nos encargamos de la instalación y el mantenimiento de sistemas de seguridad, alarmas, integración de modulos inteligentes avanzados que permiten la vigilancia de locales mediante cámaras de seguridad, con la posibilidad de monitoreo...'
+        ]
+      }
+    ],
+    sectionServices: [ // ✅
       {
         id: uuidv4(),
         imageBackground: 'https://images.unsplash.com/photo-1566245024852-04fbf7842ce9?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -36,7 +51,7 @@ const bbdd = {
       }
     ]
   },
-  pageAbout: {
+  pageAbout: { // ❓
     logoScroll: [
       // { id: uuidv4(), alter: 'logo de la empresa farmacia cruz azul', address: './../assets/image-partners/western-union.jpeg' },
       // { id: uuidv4(), alter: 'logo de la empresa farmacias economicas', address: './assets/image-partners/farmacias-economicas.png' },
@@ -47,7 +62,7 @@ const bbdd = {
       // { id: uuidv4(), alter: 'logo de la unidad educativa picauihua', address: './assets/image-partners/uep-png' }
     ]
   },
-  pageServices: {
+  pageServices: { // ✅
     cardServices: [
       {
         id: uuidv4(),
@@ -282,8 +297,8 @@ const bbdd = {
           title: 'seguridad',
           subtitle: 'instalación de sistemas de seguridad',
           description: [
-            '',
-            ''
+            'Contamos con una amplia experiencia en el campo de la seguridad, especializándonos en la implementación de diversas soluciones de seguridad. Nuestros servicios incluyen la instalación de cámaras de seguridad, cercos eléctricos, puertas automáticas y video porteros. Además, ofrecemos sistemas de monitoreo de alarmas que mantienen las residencias siempre alertas ante la presencia de personas indeseables.',
+            'Nuestros servicios son altamente valorados por una variedad de clientes, desde residencias hasta empresas medianas y grandes. Nos esforzamos por brindarles el mejor servicio posible, adaptándonos a sus necesidades específicas y garantizando su seguridad en todo momento.'
           ],
           details: {
             title: 'servicio de guardia de seguridad',
@@ -310,9 +325,11 @@ const bbdd = {
                 alter: 'imagen de un guardia de seguridad dentro de un banco'
               }
             ],
-            firstDescription: 'Contamos con un equipo de profesionales altamente calificados, especializados en garantizar la seguridad tanto de personas como de propiedades. Nuestro alcance se extiende a una variedad de entornos, desde residencias privadas hasta establecimientos comerciales y corporativos, en los que brindamos nuestros servicios de seguridad.',
-            secondDescription: 'Trabajamos en estrecha colaboración con nuestros clientes para entender sus necesidades específicas y proporcionar soluciones de seguridad personalizadas. Nuestro objetivo es superar las expectativas, asegurando que cada individuo y propiedad bajo nuestra protección esté seguro y bien cuidado.',
-            subtile: 'trabajamos con todo tipo de entidades comerciales',
+            description: [
+              'Contamos con un equipo de profesionales altamente calificados, especializados en garantizar la seguridad tanto de personas como de propiedades. Nuestro alcance se extiende a una variedad de entornos, desde residencias privadas hasta establecimientos comerciales y corporativos, en los que brindamos nuestros servicios de seguridad.',
+              'Nuestros servicios son valorados por una variedad de clientes, desde residencias hasta empresas medianas y grandes. Nos esforzamos por brindarles el mejor servicio posible, adaptándonos a sus necesidades específicas y garantizando su seguridad en todo momento.'
+            ],
+            subtile: 'sistemas seguros para tu ecosistema',
             company: ['bancos y cooperativas', 'centros comerciales', 'comercios e industrias', 'residencias e instituciones', 'resguardo en eventos festivos']
           }
         },
