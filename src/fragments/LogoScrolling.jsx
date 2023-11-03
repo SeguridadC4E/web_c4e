@@ -8,29 +8,17 @@ import logoWesternUnion from './../assets/image-partners/western-union.jpeg'
 
 const LogoScrolling = () => {
   return (
-    <ul className='fragment-logo-scrollingd-ul'>
-      <li className='fragment-logo-scrollingd-ul-li'>
-        <img src={logoCruzAzul} alt='Image 3' className='fragment-logo-scrollingd-ul-li-img' />
-      </li>
-      <li className='fragment-logo-scrollingd-ul-li'>
-        <img src={logoFarmaciasEconomicas} alt='Image 3' className='fragment-logo-scrollingd-ul-li-img' />
-      </li>
-      <li className='fragment-logo-scrollingd-ul-li'>
-        <img src={logoJena} alt='Image 3' className='fragment-logo-scrollingd-ul-li-img' />
-      </li>
-      <li className='fragment-logo-scrollingd-ul-li'>
-        <img src={logoMykRectificadora} alt='Image 3' className='fragment-logo-scrollingd-ul-li-img' />
-      </li>
-      <li className='fragment-logo-scrollingd-ul-li'>
-        <img src={logoUep} alt='Image 3' className='fragment-logo-scrollingd-ul-li-img' />
-      </li>
-      <li className='fragment-logo-scrollingd-ul-li'>
-        <img src={logoWesternUnion} alt='Image 3' className='fragment-logo-scrollingd-ul-li-img' />
-      </li>
-      <li className='fragment-logo-scrollingd-ul-li'>
-        <img src={logoUep2} alt='Image 3' className='fragment-logo-scrollingd-ul-li-img' />
-      </li>
-    </ul>
+    <div className='fragment-slider'>
+      <div className='fragment-slide-track'>
+        <div className='fragment-slide'><img src={logoCruzAzul} alt='Image 3' /></div>
+        <div className='fragment-slide'><img src={logoFarmaciasEconomicas} alt='Image 3' /></div>
+        <div className='fragment-slide'><img src={logoJena} alt='Image 3' /></div>
+        <div className='fragment-slide'><img src={logoMykRectificadora} alt='Image 3' /></div>
+        <div className='fragment-slide'><img src={logoUep} alt='Image 3' /></div>
+        <div className='fragment-slide'><img src={logoWesternUnion} alt='Image 3' /></div>
+        <div className='fragment-slide'><img src={logoUep2} alt='Image 3' /></div>
+      </div>
+    </div>
   )
 }
 
