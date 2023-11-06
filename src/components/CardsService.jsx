@@ -1,3 +1,4 @@
+import './CardsService.css'
 import { Link } from 'react-router-dom'
 import { GlobalContext } from '../provider/Provider'
 import { useContext } from 'react'

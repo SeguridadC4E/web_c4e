@@ -1,0 +1,194 @@
+.main{
+
+}
+/*MAIN-Ssection-portada*/
+.section-front{
+  color: var(--color-light-gray);
+  background: linear-gradient(rgba(26, 15, 15, 0.003), #ffffff44), url("../assets/img-content/Private-security.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+}
+
+.front-h2{  
+  font-weight:900;
+  font-size:2.5rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  padding: .5em 0;
+}
+
+.front-button{
+  cursor: pointer;
+  background-color:var(--color-dark-tomato);
+  padding: .45em;
+  text-transform: uppercase;
+  color: var(--color-light-gray);
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+/*MAIN-section-legend*/
+.section-legend{
+  background: linear-gradient(#ffffff44,rgba(183, 167, 151, 0.541));
+  color: rgb(56, 48, 40);
+  font-size: 18px;
+  font-weight: 800;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 1em;
+
+  padding: 1.5em;
+
+  height: 40vh;
+} 
+
+.section-legend-text{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.15em 0;
+}
+
+/*MAIN-section-about*/
+.section-about{
+  background:linear-gradient(rgba(183, 167, 151, 0.541) ,rgba(183, 167, 151, 0.79));
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  width: 100%;
+  height: 70vh;
+  padding: 0 5%;
+}   
+
+.section-about-image{
+  background: url(../assets/img-content/about-model-1.jpg) no-repeat;
+  border-radius: .3125rem;
+  box-shadow: -0.605em .605em 1em var(--color-box-shadow);
+  width: 100vw;
+  height: 57vh;
+}
+
+.section-about-info{
+  width: 90vw;
+ }
+
+.section-about-info-header{
+  text-transform: uppercase;
+}
+
+.section-about-info-header-span{
+  font-size: .875rem; 
+  font-style: italic;
+}
+
+.section-about-info-header-h1{
+  color: var(--color-text-title);
+  font-family: var(--tipo-principal1);
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: pink;
+
+  letter-spacing: .125rem;
+  padding: 0.5em 0;
+}
+
+.section-about-info-body{
+  color: var(--color-text-paragraph);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.section-about-info-body-p{
+  color: var(--color-text-title);
+  letter-spacing: .0625em;
+  padding-bottom: 0.5em;
+}
+
+.section-about-info-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.about-info-section-button{
+  background-color: var(--color-dark-tomato);
+  color: var(--color-light-gray);
+  font-size: .875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  width: 10em;
+  padding: 0.5em;
+}
+
+
+/*MAIN-section-services*/
+.section-services{
+  background: linear-gradient(rgba(183, 167, 151, 0.79),rgba(183, 167, 151, 0.541));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 5%;
+}
+
+.section-services-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.section-services-content-link{
+  color: var(--color-text-paragraph-card);
+  font-size: .8125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-services-content-link:hover{
+  text-decoration: underline;
+  color: var(--color-light-tomato);
+  transition: all 1s ease;
+}
+
+.section-services-title{
+  color: var(--color-text-title);
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: .0938rem;
+  text-transform: uppercase;
+  padding: 2em 0;
+}
+
+.section-contact{
+  background: linear-gradient(rgba(183, 167, 151, 0.541), #ffffff44);
+  height: 70vh;
+}
+
+.section-contact-title{}
+
+.section-extra{
+
+  background: linear-gradient(#ffffff44, rgb(255, 255, 255));
+  height: 70vh;
+}
+.section-extra-title{}

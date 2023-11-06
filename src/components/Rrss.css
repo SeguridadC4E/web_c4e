@@ -1,0 +1,21 @@
+.rrss{
+	display: flex;
+	flex-direction:row;
+	justify-content: start;
+	align-items: center;
+	gap:1em;
+}
+.rrss-li{
+	width: 1.875em;
+	height:1.875em;
+}
+.rrss-li-a{
+	border-radius:1.5625em;
+}
+.rrss-li-a svg{
+	width: 100%;
+	height: 100%;
+}
+.rrss-li-a::hover {
+	fill: rgb(242, 68, 68);
+}

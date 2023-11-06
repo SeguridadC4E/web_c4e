@@ -1,0 +1,15 @@
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .3125em;
+}
+
+.logo-img{
+  width: 4.25em;
+}
+
+.logo-img--fullName{
+  width: 5.25em;
+}

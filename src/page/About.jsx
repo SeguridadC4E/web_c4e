@@ -1,3 +1,4 @@
+import './About.css'
 import trustAbout from './../assets/img-content/trust-about.jpg'
 import LogoScrolling from '../fragments/LogoScrolling'
 

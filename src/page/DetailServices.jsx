@@ -1,6 +1,8 @@
+import './DetailServices.css'
+
 const DetailServices = () => {
   return (
-    <section>
+    <section className='detail'>
       <p className='p'>esto son los detalles</p>
       <p>pagina es construccion :😁</p>
     </section>

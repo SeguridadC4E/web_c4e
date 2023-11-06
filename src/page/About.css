@@ -1,0 +1,208 @@
+.page-about{}
+
+.page-about-header{
+  color: var(--color-text-image);
+  background-image: url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-size:cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 3em 2em;
+
+  height: 100vh;
+}
+
+.page-about-header-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding: 1em 0;
+}
+
+.page-about-header-title{
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: .0938rem;
+  text-transform: uppercase;
+  padding-top: 2em;
+}
+
+.page-about-header-text{
+  font-family:var(--font-family-phrase);
+  font-size: 1.125rem;
+  font-style: italic;
+  text-align: center;
+  width: 80%;
+  padding: 2em 0;
+}
+
+.page-about-section-intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding:2em 3em;
+}
+
+.page-about-section-intro-h2{
+  color: var(--color-text-title);
+  font-size: 4rem;
+  font-weight: 800;
+  text-align:center;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+
+.page-about-section-intro-div{
+  color: var(--color-text-paragraph);
+  display: grid;
+  grid-template-columns: auto 10px auto;
+  gap: 1em;
+  width: 100%;
+}
+
+.page-about-section-intro-div-bar{
+  background-color: rgb(235, 229, 220);
+  border-radius: 10px;
+  width: 5px;
+  height: 100%;
+}
+
+.page-about-section-intro-div-group-p{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  
+}
+
+.page-about-section-intro-div-p{
+  color: var(--color-text-services-span);
+  letter-spacing: 1px;
+}
+
+.page-about-section-mission{
+  background: linear-gradient(rgba(255, 255, 255, 0.79), rgba(183, 167, 151, 0.79));
+  display:grid;
+  grid-template-columns: 50% 50%; 
+  justify-content:center;
+  align-items:center;
+  gap:1em;
+  padding: 0 2em;
+}
+
+.page-about-section-missionVision{
+  background: linear-gradient(rgba(183, 167, 151, 0.79), rgba(255, 255, 255, 0.79));
+  display:grid;
+  grid-template-columns: 50% 50%; 
+  justify-content:center;
+  align-items:center;
+  gap:1em;
+  padding: 2em;
+}
+
+.page-about-section-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-about-section-div-h3{
+  color: var(--color-text-paragraph-context);
+  font-family:var(--second-type);
+  font-size:4rem;
+  font-weight:700;
+  text-transform:uppercase;
+
+  padding: 0.75em 0;
+}
+
+.page-about-section-div-p{
+  color: var(--color-text-services-span);
+  padding:0.5em;
+  letter-spacing: 1px;
+}
+
+.page-about-section-img{
+  border-radius: .3125em;
+  box-shadow: -0.605em .605em 1em var(--color-box-shadow);
+  
+  width:100%;
+  height: 70%;
+}
+
+.page-about-section-phrase{
+  background-color: rgba(183, 167, 151, 0.79);
+  color: var(--color-text-paragraph-card);
+  display:grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items:center;
+  gap:0.5em;
+
+  padding: 2em;
+}
+
+.page-about-section-phrase-div{}
+
+.page-about-section-phrase-h2 span{
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: var(--font-family-phrase);
+  padding: 0 0.25em;
+}
+
+.page-about-section-phrase-h2{
+  color: var(--color-text-image);
+  font-family: var(--second-type);
+  font-style:italic;
+  font-size:1.5rem;
+  letter-spacing: 1px;
+  width:100%;
+  height: 100%;
+  padding: 1em 0;
+  
+}
+
+.page-about-section-phrase-p{
+  color: var(--color-light-gray);
+  font-size: .875rem;
+  text-transform: capitalize;
+  text-align:end;
+  letter-spacing: 1px;
+}
+
+.page-about-section-phrase-img{
+  border-radius: .3125em;
+  box-shadow: -0.605em .605em 1em var(--color-box-shadow);
+  width:100%;
+  height:200px;
+}
+
+.page-about-section-partners{
+  padding-top: 1em;
+  padding-bottom: 2em;
+
+}
+
+.page-about-section-partners-h3{
+  font-family:var(--second-type);
+  color: var(--color-text-paragraph-context);
+  font-size:4rem;
+  font-weight:700;
+  text-transform:uppercase;
+  text-align:center;
+  padding: 1em 0;
+
+}
+
+.page-about-section-div-partners{
+  width: 100%;
+  overflow: hidden;
+}

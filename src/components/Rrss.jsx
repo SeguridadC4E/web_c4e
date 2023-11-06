@@ -1,3 +1,5 @@
+import './Rrss.css'
+
 const Rrss = () => {
   return (
     <ul className='rrss'>

@@ -1,6 +1,7 @@
-import menuHamburger from './../assets/svg/menu-Hamburger.svg'
+import './Headboard.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import menuHamburger from './../assets/svg/menu-Hamburger.svg'
 import Logo from '../fragments/Logo'
 
 const Headboard = () => {

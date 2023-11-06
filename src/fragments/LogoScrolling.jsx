@@ -1,3 +1,4 @@
+import './LogoScrolling.css'
 import logoCruzAzul from './../assets/image-partners/f-cruz-azul.jpg'
 import logoFarmaciasEconomicas from './../assets/image-partners/farmacias-economicas.png'
 import logoJena from './../assets/image-partners/jena.png'

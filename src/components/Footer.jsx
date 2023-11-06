@@ -1,3 +1,4 @@
+import './Footer.css'
 import Logo from '../fragments/Logo'
 import Rrss from './Rrss'
 

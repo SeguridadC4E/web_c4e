@@ -1,3 +1,4 @@
+import './Logo.css'
 import onlyLogoC4E from './../assets/only-logo-c4e.png'
 import fullLogoC4E from './../assets/full-name-logo-c4e.png'
 import { Link } from 'react-router-dom'
