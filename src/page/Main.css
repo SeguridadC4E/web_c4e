@@ -1,5 +1,5 @@
 .main{
-
+  
 }
 /*SECTION-COVER*/
 .section-front{
@@ -7,17 +7,18 @@
   background-position: center;
   background-size: cover;
   color: var(--color-light-gray);
-    
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-     
+  align-items: start;
+  
   width: 100%;
   max-width: 100%;
-  min-width: 320px;
+  min-width: 20em;
   height: 90vh;
   position: relative;
+  /* text-align: center; */
 }
 
 .section-front-h1{  
@@ -25,7 +26,7 @@
   font-family: var(--type-title);
   font-size: clamp(2rem, 1.2vw, 3rem);
   font-weight: 900;
-  letter-spacing: 1px;
+  letter-spacing: .0625rem;
   line-height: 3rem;
   padding: .3125em 5%;
   text-transform: uppercase;
@@ -42,7 +43,7 @@
   font-weight: 700;
   font-family: var(--second-type);
   font-size: clamp(.9375rem, 1.2vw, 1.5rem);
-  letter-spacing: 1px;
+  letter-spacing: .0625rem;
   padding: 0 5%;
 }
 .section-front-button{
@@ -52,30 +53,31 @@
   font-family: var(--second-type);
   font-size: clamp(.875rem, 1.1vw, 1.25rem);
   font-weight: 700;
-  padding: .5em 1em;
+  letter-spacing: .0625rem;
+  left: 5%;
+  text-transform: uppercase;
   
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1em;
-
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 1em 5%;
-  width: 400;
+  
+  padding: .5em 1em;
+  margin-top: 1em;
+  max-width: 10.9375em;
 
 }
 .section-front-button spang{
-  font-size: 30px;
-  line-height: 15px;
+  font-size: 1.875rem;
+  line-height: .9375em;
 }
 
-.btn-three {
+.btn-animation {
   transition: all 0.5s;
   position: relative;
 }
-.btn-three::before {
+.btn-animation::before {
   content: '';
   position: absolute;
   top: 0;
@@ -86,11 +88,11 @@
   background-color: rgba(255, 255, 255, 0.183);
   transition: all 0.3s;
 }
-.btn-three:hover::before {
+.btn-animation:hover::before {
   opacity: 0 ;
   transform: scale(0.5,0.5);
 }
-.btn-three::after {
+.btn-animation::after {
   content: '';
   position: absolute;
   top: 0;
@@ -100,12 +102,12 @@
   z-index: 1;
   opacity: 0;
   transition: all 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.594);
+  border: .0625em solid rgba(255, 255, 255, 0.594);
   transform: scale(1.2,1.2);
 }
-.btn-three:hover::after {
+.btn-animation:hover::after {
   opacity: 1;
-  transform: scale(1,1);
+  transform: scale(1, 1);
 }
 
 

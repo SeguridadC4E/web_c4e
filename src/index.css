@@ -261,7 +261,7 @@ body {
 }
 
 @media only screen and ( max-width: 48rem ){
-	.header-menu{
+  .header-menu{
 		display: flex;
     width: 25px;
     height: 35px;
@@ -297,12 +297,17 @@ body {
     font-size: 1rem;
   }
 
+/*Main*/
   .section-front{
+    align-items:center;
     width: 100%;
   }
   .section-front div {
     top: 25vh;
     width: 75vw;
     text-align: center;
+  }
+  .section-front-button{
+    max-width: 100%;
   }
 }
