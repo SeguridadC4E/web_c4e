@@ -6,9 +6,10 @@ const Main = () => {
   return (
     <main className='main'>
       <section className='section-front'>
-        <h2 className='front-h2'>seguridad</h2>
-        <h2 className='front-h2'>privada</h2>
-        <Link to='/sobre-nosotros' className='front-button'>mas información</Link>
+        <p className='section-front-p'>nosotros somos</p>
+        <h1 className='section-front-h1'>c4e cuji seguridad <br /> <br /> <br /> del ecuador cia. ltda.</h1>
+        <p className='section-front-text'>Brindamos protección a residencias, locales comerciales, instalamos sistemas de seguridad</p>
+        <Link to='/servicios' className='section-front-button btn-three'>leer más<span>&#10230;</span></Link>
       </section>
       <section className='section-legend'>
         <h2 className='section-legend-text'>

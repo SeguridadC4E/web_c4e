@@ -1,47 +1,46 @@
+
 .fragment-car-services-ul{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 1em;
-	width: 100%;
-}
-
-.fragment-car-services-ul-li{}
-
-.fragment-car-services-ul-li-div{
-	position: relative;
-	width: 260px;
-}
-.fragment-car-services-ul-li-div-img{
-	border-radius: .3125rem .3125rem 0 0;
-	box-shadow: -0.605em .605em 1em var(--color-box-shadow); 
-}
-
-.fragment-card-services-ul-li-div-link{
-	background-color: rgba(141, 121, 104, 0.733);
-	color: var(--color-text-image);
-	font-weight: 700;
-	font-size: 1.0625rem;
-	text-transform: uppercase;
-	text-align: center;
-
-	position: absolute;
-	top:auto;
-	right: 0;
-	left:0;
-	bottom: 0;
-	
-	height: 15%;
-	width: 100%;
-	padding: 5px;
-}
-
-.fragment-car-services-ul-li-div:hover{
-	box-shadow: -0.605em .605em 1em rgb(127, 110, 110);
-	transition: all 0.2s ease;
-}
-
-.fragment-card-services-ul-li-div-link:hover {
-	color: var(--color-light-gray);
-	font-size: 18px;
-	transition: all 0.1s ease;
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    width: 100%;
+  }
+  .fragment-car-services-ul-li{
+  }
+  .fragment-car-services-ul-li-div{
+    position: relative;
+    width: 260px;
+  }
+  .fragment-car-services-ul-li-div-img{
+    border-radius: .3125rem .3125rem 0 0;
+    box-shadow: -0.605em .605em 1em var(--color-box-shadow); 
+    
+  }
+  .fragment-card-services-ul-li-div-link{
+    background-color: rgba(141, 121, 104, 0.733);
+    color: var(--color-text-image);
+    font-weight: 700;
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    text-align: center;
+  
+    position: absolute;
+    top:auto;
+    right: 0;
+    left:0;
+    bottom: 0;
+    
+    height: 15%;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .fragment-car-services-ul-li-div:hover{
+    box-shadow: -0.605em .605em 1em rgb(127, 110, 110);
+    transition: all 0.2s ease;
+  }
+  .fragment-card-services-ul-li-div-link:hover {
+    color: var(--color-light-gray);
+    font-size: 18px;
+    transition: all 0.1s ease;
+  }

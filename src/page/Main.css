@@ -1,42 +1,114 @@
 .main{
 
 }
-/*MAIN-Ssection-portada*/
+/*SECTION-COVER*/
 .section-front{
-  color: var(--color-light-gray);
-  background: linear-gradient(rgba(26, 15, 15, 0.003), #ffffff44), url("../assets/img-content/Private-security.jpg");
-  background-repeat: no-repeat;
+  background-image: radial-gradient(rgba(43, 43, 43, 0.493), rgba(174, 202, 243, 0.237)), url('../assets/img-content/Private-security.jpg');
+  background-position: center;
   background-size: cover;
-
+  color: var(--color-light-gray);
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
+  align-items: start;
+     
   width: 100%;
-  height: 100vh;
-  padding: 0;
+  height: 90vh;
 }
 
-.front-h2{  
-  font-weight:900;
-  font-size:2.5rem;
+.section-front-h1{  
+  color: var(--color-text-image);
+  font-family: var(--type-title);
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: .5em 5%;
   text-transform: uppercase;
-  letter-spacing: .5rem;
-  padding: .5em 0;
 }
-
-.front-button{
-  cursor: pointer;
-  background-color:var(--color-dark-tomato);
-  padding: .45em;
+.section-front-p{  
+  margin-top: 5px;
+  font-weight: 700;
+  font-family: var(--second-type);
+  font-size: 20px;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 5%;
+}
+.section-front-text{
+  margin-top: 5px;
+  font-weight: 700;
+  font-family: var(--second-type);
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 0 5%;
+}
+.section-front-button{
+  border: 2px solid white;
   color: var(--color-light-gray);
-  font-weight: 600;
-  font-size: 1.15rem;
+  cursor: pointer;
+  font-family: var(--second-type);
+  font-size: 15px;
+  font-weight: 700;
+  padding: .5em 1em;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 1em 5%;
+  width: 400;
+
+}
+.section-front-button spang{
+  font-size: 30px;
+  line-height: 15px;
 }
 
-/*MAIN-section-legend*/
+
+.btn-three {
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.183);
+  transition: all 0.3s;
+}
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.594);
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+
+/*SECTION-LEGEND*/
 .section-legend{
   background: linear-gradient(#ffffff44,rgba(183, 167, 151, 0.541));
   color: rgb(56, 48, 40);
@@ -60,7 +132,7 @@
   padding: 0.15em 0;
 }
 
-/*MAIN-section-about*/
+/*SECTION-ABOUT*/
 .section-about{
   background:linear-gradient(rgba(183, 167, 151, 0.541) ,rgba(183, 167, 151, 0.79));
  
@@ -139,7 +211,7 @@
 }
 
 
-/*MAIN-section-services*/
+/*SECTION-SERVICES*/
 .section-services{
   background: linear-gradient(rgba(183, 167, 151, 0.79),rgba(183, 167, 151, 0.541));
   display: flex;
@@ -179,6 +251,7 @@
   padding: 2em 0;
 }
 
+/*SECTION-CONTACT*/
 .section-contact{
   background: linear-gradient(rgba(183, 167, 151, 0.541), #ffffff44);
   height: 70vh;
@@ -186,6 +259,7 @@
 
 .section-contact-title{}
 
+/*SECTION-EXTRA*/
 .section-extra{
 
   background: linear-gradient(#ffffff44, rgb(255, 255, 255));
