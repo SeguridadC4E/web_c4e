@@ -7,39 +7,41 @@
   background-position: center;
   background-size: cover;
   color: var(--color-light-gray);
-  
+    
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
      
   width: 100%;
+  max-width: 100%;
+  min-width: 320px;
   height: 90vh;
+  position: relative;
 }
 
 .section-front-h1{  
   color: var(--color-text-image);
   font-family: var(--type-title);
-  font-size: 4rem;
+  font-size: clamp(2rem, 1.2vw, 3rem);
   font-weight: 900;
   letter-spacing: 1px;
-  padding: .5em 5%;
+  line-height: 3rem;
+  padding: .3125em 5%;
   text-transform: uppercase;
 }
 .section-front-p{  
-  margin-top: 5px;
   font-weight: 700;
   font-family: var(--second-type);
-  font-size: 20px;
+  font-size: clamp(.9375rem, 1vw, 1.25rem);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .0625rem;
   padding: 0 5%;
 }
 .section-front-text{
-  margin-top: 5px;
   font-weight: 700;
   font-family: var(--second-type);
-  font-size: 18px;
+  font-size: clamp(.9375rem, 1.2vw, 1.5rem);
   letter-spacing: 1px;
   padding: 0 5%;
 }
@@ -48,7 +50,7 @@
   color: var(--color-light-gray);
   cursor: pointer;
   font-family: var(--second-type);
-  font-size: 15px;
+  font-size: clamp(.875rem, 1.1vw, 1.25rem);
   font-weight: 700;
   padding: .5em 1em;
   
@@ -68,7 +70,6 @@
   font-size: 30px;
   line-height: 15px;
 }
-
 
 .btn-three {
   transition: all 0.5s;
