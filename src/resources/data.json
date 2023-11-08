@@ -1,0 +1,34 @@
+{
+	"articles":[
+    {
+			"id": 1,
+			"title": "Monitore",
+			"description": "Ofrecemos el servicio de monitoreo ininterrumpido, disponible las 24 horas del día, los 7 días de la semana siempre al servicio de nuestros clientes en todo momento.",
+			"img":"/monitoring.svg",
+			"alter": "icono del servicio de monitore ",
+			"rel": "noopener",
+      "referrerpolicy": "no-referrer",
+      "target": "_self"
+    },
+		{
+			"id": 2,
+			"title": "Sistemas de seguridad",
+			"description": "Tenemos experiencia en la instalación de cámaras de seguridad, cercos eléctricos, puertas automáticas, videoporteros y monitoreo de alarmas.",
+			"img": "/security.svg",
+			"alter": "icono del servicio de sistemas de seguridad",
+			"rel": "noopener",
+      "referrerpolicy": "no-referrer",
+      "target": "_self"			
+		},
+		{
+			"id": 3,
+			"title": "Seguridad",
+			"description": "Contamos con equipos de profesionales altamente capacitados brindando un ambiente seguro y tranquilo para el trabajar y eventos por contratación.",
+			"img":"./protection.svg",
+			"alter": "icono del servicio de protección",
+			"rel": "noopener",
+      "referrerpolicy": "no-referrer",
+      "target": "_self"			
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import './Main.css'
 import { Link } from 'react-router-dom'
-import CardsServices from '../components/CardsService'
+import CardsServices from '../components/CardsService.jsx'
+import { articles } from '../resources/data.json'
 
 const Main = () => {
   return (
@@ -14,12 +15,36 @@ const Main = () => {
         </div>
       </section>
       <section className='section-legend'>
-        <h2 className='section-legend-text'>
-          Protegemos locales comerciales y residencias
-        </h2>
-        <h3 className='section-legend-text'>
-          Instalación y mantenimientos de sistemas de seguridad
-        </h3>
+        <article className='section-legend-article'>
+          <header className='legend-article-header'>
+            <h2 className='section-legend-title'>c4e seguridad</h2>
+            <h3 className='section-legend-subtitle'>Tu mejor alternativa en temas de seguridad</h3>
+          </header>
+          <ul className='section-ul'>
+            {articles.map(article => (
+              <li key={article.id} className='section-ul-li'>
+                <section className='article'>
+                  <img
+                    className='article-img'
+                    src={article.img}
+                    alt={article.alter}
+                  />
+                  <h2 className='article-title'>{article.title}</h2>
+                  <p className='article-text'>{article.description}</p>
+                  <Link
+                    className='article-link'
+                    to='/servicios'
+                    rel={article.rel}
+                    referrerpolicy={article.referrerpolicy}
+                    target={article.target}
+                  >
+                    leer más<span>&#10230;</span>
+                  </Link>
+                </section>
+              </li>
+            ))}
+          </ul>
+        </article>
       </section>
       <section className='section-about'>
         <div className='section-about-image' />

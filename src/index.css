@@ -245,7 +245,7 @@ svg {
 
 /* Configuramos la tipografía para toda la web */
 body {
-  background: white;
+  background: rgba(255, 255, 255, 0.938);
   min-height: 100vh;
   font-size: 100%;
   font-family: var(--type-text);
@@ -291,10 +291,6 @@ body {
   .section-front{
     width: 100%;
     background-size: cover;
-  }
-  .section-legend{
-    background-color: pink;
-    font-size: 1rem;
   }
 
 /*Main*/
