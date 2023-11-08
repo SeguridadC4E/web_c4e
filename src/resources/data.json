@@ -30,5 +30,16 @@
       "referrerpolicy": "no-referrer",
       "target": "_self"			
     }
-  ]
+  ],
+  "about":{
+		"id": 1,
+		"title": "c4e seguridad privada",
+		"text1": "Empresa de seguridad privada especializada en proporcionar protección a locales comerciales, residencias y garantiza la protección en eventos por contratos. Ofrecemos un sistema de monitoreo las 24 horas, siempre preparados para atender a nuestros clientes.",
+		"text2": "Además, nos encargamos de la instalación y el mantenimiento de sistemas de seguridad, alarmas, integración de modulos inteligentes avanzados que permiten la vigilancia de locales mediante cámaras de seguridad, con la posibilidad de monitoreo...",
+		"img": "./section-about.jpg",
+		"alter": "imagen de camaras",
+		"rel": "noopener",
+		"referrerpolicy": "no-referrer",
+		"target": "_self"
+  }
 }

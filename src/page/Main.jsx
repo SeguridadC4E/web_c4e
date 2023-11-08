@@ -1,11 +1,12 @@
 import './Main.css'
 import { Link } from 'react-router-dom'
 import CardsServices from '../components/CardsService.jsx'
-import { articles } from '../resources/data.json'
+import { articles, about } from '../resources/data.json'
 
 const Main = () => {
   return (
     <main className='main'>
+      {/* section de la portada */}
       <section className='section-front'>
         <div>
           <p className='section-front-p'>nosotros somos</p>
@@ -14,6 +15,7 @@ const Main = () => {
           <Link to='/servicios' className='section-front-button btn-animation'>leer más<span>&#10230;</span></Link>
         </div>
       </section>
+      {/* section modelo de negocio */}
       <section className='section-legend'>
         <article className='section-legend-article'>
           <header className='legend-article-header'>
@@ -35,7 +37,7 @@ const Main = () => {
                     className='article-link'
                     to='/servicios'
                     rel={article.rel}
-                    referrerpolicy={article.referrerpolicy}
+                    referrerPolicy={article.referrerpolicy}
                     target={article.target}
                   >
                     leer más<span>&#10230;</span>
@@ -46,20 +48,30 @@ const Main = () => {
           </ul>
         </article>
       </section>
+      {/* section about */}
       <section className='section-about'>
-        <div className='section-about-image' />
-        <div className='section-about-info'>
-          <header className='section-about-info-header'>
-            <span className='section-about-info-header-span'>somos</span>
-            <h1 className='section-about-info-header-h1'>c4e</h1>
-          </header>
-          <section className='section-about-info-body'>
-            <p className='section-about-info-body-p'>Una empresa de seguridad privada especializada en proporcionar protección para locales comerciales y garantizar la seguridad en residencias. Ofrecemos un sistema de monitoreo las 24 horas, siempre preparados para atender a nuestros clientes.</p>
-            <p className='section-about-info-body-p'>Además, nos encargamos de la instalación y el mantenimiento de sistemas de seguridad, alarmas, integración de modulos inteligentes avanzados que permiten la vigilancia de locales mediante cámaras de seguridad, con la posibilidad de monitoreo...</p>
-          </section>
-          <footer className='section-about-info-footer'>
-            <Link to='/sobre-nosotros' className='about-info-section-button'>seguir leyendo</Link>
-          </footer>
+        <div className='section-container'>
+          <img
+            className='section-about-image'
+            src={about.img}
+            alt={about.alter}
+          />
+          <article className='section-about-info'>
+            <header className='section-about-info-header'>
+              <h2 className='section-about-info-header-h1'>{about.title}</h2>
+            </header>
+            <section className='section-about-info-body'>
+              <p className='section-about-info-body-p'>{about.text1}</p>
+              <Link
+                to='/sobre-nosotros'
+                className='article-link'
+                referrerPolicy={about.referrerpolicy}
+                target={about.target}
+                rel={about.rel}
+              >leer más<span>&#10230;</span>
+              </Link>
+            </section>
+          </article>
         </div>
       </section>
       <section className='section-services'>
