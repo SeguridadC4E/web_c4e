@@ -18,7 +18,7 @@
   min-width: 20em;
   height: 90vh;
   position: relative;
-  /* text-align: center; */
+  padding: 0 5%;
 }
 
 .section-front-h1{  
@@ -28,7 +28,6 @@
   font-weight: 900;
   letter-spacing: .0625rem;
   line-height: 3rem;
-  padding: .3125em 5%;
   text-transform: uppercase;
 }
 .section-front-p{  
@@ -37,14 +36,12 @@
   font-size: clamp(.9375rem, 1vw, 1.25rem);
   text-transform: uppercase;
   letter-spacing: .0625rem;
-  padding: 0 5%;
 }
 .section-front-text{
   font-weight: 700;
   font-family: var(--second-type);
   font-size: clamp(.9375rem, 1.2vw, 1.5rem);
   letter-spacing: .0625rem;
-  padding: 0 5%;
 }
 .section-front-button{
   border: 2px solid white;
@@ -54,7 +51,6 @@
   font-size: clamp(.875rem, 1.1vw, 1.25rem);
   font-weight: 700;
   letter-spacing: .0625rem;
-  left: 5%;
   text-transform: uppercase;
   
   display: flex;
@@ -63,7 +59,7 @@
   align-items: center;
   gap: 1em;
   
-  padding: .5em 1em;
+  padding: .5em 0;
   margin-top: 1em;
   max-width: 10.9375em;
 
