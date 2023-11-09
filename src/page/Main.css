@@ -296,42 +296,19 @@
 
 /*SECTION-SERVICES*/
 .section-services{
-  background: linear-gradient(rgba(183, 167, 151, 0.79),rgba(183, 167, 151, 0.541));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3em 5%;
-}
-
-.section-services-content{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.section-services-content-link{
-  color: var(--color-text-paragraph-card);
-  font-size: .8125rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.section-services-content-link:hover{
-  text-decoration: underline;
-  color: var(--color-light-tomato);
-  transition: all 1s ease;
+  text-align: center;
+  padding: 5% 10%;
 }
 
 .section-services-title{
   color: var(--color-text-title);
-  font-size: 2.5rem;
+  font-family: var(--type-title);
+  font-size: clamp(1.5625rem, 2vw, 3.375rem);
   font-weight: 800;
-  letter-spacing: .0938rem;
+  line-height: 1.3rem;
+  letter-spacing: .0625rem;
   text-transform: uppercase;
-  padding: 2em 0;
+  padding-bottom:2em;
 }
 
 /*SECTION-CONTACT*/

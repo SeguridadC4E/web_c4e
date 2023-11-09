@@ -1,6 +1,6 @@
 import './Main.css'
 import { Link } from 'react-router-dom'
-import CardsServices from '../components/CardsService.jsx'
+import CardsService from '../components/CardsService.jsx'
 import { articles, about } from '../resources/data.json'
 
 const Main = () => {
@@ -74,12 +74,10 @@ const Main = () => {
           </article>
         </div>
       </section>
+      {/* section services */}
       <section className='section-services'>
-        <div className='section-services-content'>
-          <h2 className='section-services-title'>nuestros servicios</h2>
-          <Link to='/servicios' className='section-services-content-link'>ver mas</Link>
-        </div>
-        <CardsServices />
+        <h2 className='section-services-title'>nuestros servicios</h2>
+        <CardsService />
       </section>
       <section className='section-contact'>
         <h3 className='section-contact-title'>contactanos</h3>

@@ -1,20 +1,34 @@
 import './CardsService.css'
 import { Link } from 'react-router-dom'
-import { GlobalContext } from '../provider/Provider'
-import { useContext } from 'react'
+import { cardServices } from '../resources/data.json'
 
 const CardsServices = () => {
-  const { pageMain } = useContext(GlobalContext)
-  const { sectionServices } = pageMain
-
+  // console.log(cardServices)
   return (
-    <ul className='fragment-car-services-ul'>
-      {sectionServices.map((service) =>
-        <li key={service?.id} className='fragment-car-services-ul-li'>
-          <div className='fragment-car-services-ul-li-div'>
-            <img src={service?.imageBackground} alt={service?.imageAlter} className='fragment-car-services-ul-li-div-img' />
-            <Link to='/servicios/:id' className='fragment-card-services-ul-li-div-link'>{service?.title}</Link>
-          </div>
+    <ul className='fragment-card-ul'>
+      {cardServices.map((card) =>
+        <li
+          className='fragment-card-container'
+          key={card?.id}
+        >
+          <article className='fragment-card-article'>
+            <img
+              className='fragment-card-img'
+              src={card?.image.imageService}
+              alt={card?.image.imageAlter}
+            />
+            <div className='fragment-card-data'>
+              {/* <span className='fragment-card-description' /> */}
+              <h2 className='fragment-card-title'>
+                {card?.service.subtitle}
+              </h2>
+              <Link
+                to='/servicios/:id'
+                className='fragment-card-button'
+              >Seguir
+              </Link>
+            </div>
+          </article>
         </li>
       )}
     </ul>

@@ -1,12 +1,9 @@
 import './Services.css'
-import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { GlobalContext } from '../provider/Provider'
+import { cardServices } from '../resources/data.json'
 
 const Services = () => {
-  const { pageServices } = useContext(GlobalContext)
-  const { cardServices } = pageServices
-
+  console.log(cardServices)
   return (
     <>
       <div className='page-services'>
