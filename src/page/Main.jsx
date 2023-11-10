@@ -2,7 +2,7 @@ import './Main.css'
 import { Link } from 'react-router-dom'
 import CardsService from '../components/CardsService.jsx'
 import LogoScrolling from '../fragments/LogoScrolling.jsx'
-import { articles, about } from '../resources/data.json'
+import { articles, about, faqs } from '../resources/data.json'
 
 const Main = () => {
   return (
@@ -91,6 +91,22 @@ const Main = () => {
       <section className='section-helper'>
         <h3 className='section-helper-title'>Empresas que confian en c4e seguridad</h3>
         <LogoScrolling />
+      </section>
+      <section className='section-faq'>
+        <h3 className='section-faq-title'>Preguntas frecuentes</h3>
+        <ul className='accordion'>
+          {faqs.map(faq => (
+            <li key={faq.id}>
+              <input type='radio' name='accordion' id={faq.inputId} checked />
+              <label for={faq.inputFor}>{faq.question}</label>
+              <div className='content'>
+                <p>
+                  {faq.answer}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
       </section>
     </main>
   )

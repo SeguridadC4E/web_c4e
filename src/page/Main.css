@@ -338,7 +338,7 @@
   padding-top: 1em;
 }
 
-/*SECTION-EXTRA*/
+/*SECTION-HELPER*/
 .section-helper{
   padding-top: 5%;
 }
@@ -350,4 +350,71 @@
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+/*SECTION-FAQ*/
+.section-faq{
+  padding: 5% 10%;
+  height: 100vh;
+}
+.section-faq-title{
+  color: var(--color-text-title);
+  font-family: var(--type-title);
+  font-size: clamp(1.125rem, 3vw, 2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.75rem;
+  letter-spacing: .0625em;
+}
+.accordion li{
+  list-style: none; 
+  padding: .625em;
+  border-radius: .3125em;
+  border-bottom: solid .125em var(--color-box-shadow);
+  letter-spacing: .0625em;
+}
+
+.accordion li label{
+  cursor: pointer; 
+  color: var(--color-text-title);
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+  
+  display: flex;
+  align-items: center;
+  
+
+  padding: .625em;
+}
+
+label::before{
+  content:'+';
+  margin-right: .625em;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+}
+
+input[type="radio"]{
+  display: none;
+} 
+
+.accordion .content{
+  color: var(--color-text-paragraph);
+  padding:0 .625em;
+  line-height: 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+  max-height: 25em;
+  padding: .625rem .625rem 1.25em;
+}
+.accordion input[type="radio"]:checked + label::before{
+  content:'-';
+  font-size: clamp(1.5rem, 1.5vw, 1.25rem);
+  font-weight: 700;
+  transition: all ease 1s;
 }

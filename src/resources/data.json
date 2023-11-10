@@ -42,7 +42,6 @@
 		"referrerpolicy": "no-referrer",
 		"target": "_self"
   },
-	
 	"cardServices": [
 		{
 			"id": 1,
@@ -324,6 +323,36 @@
 				"referrerpolicy": "no-referrer",
 				"target": "_self"
 			}
+		}
+	],
+	"faqs":[
+		{
+			"id": 1,
+			"inputId": "first",
+			"inputFor": "first",
+			"question": "¿Qué es C4E?",
+			"answer": "Harum labore ipsam consequuntur cum! Laboriosam excepturi dolores maxime dignissimos tenetur odio iure inventore consequuntur.Vero pariatur corrupti eos temporibus dolore repudiandae nobis dolorem aliquid fuga, ratione iure recusandae nisi itaque ab consectetur porro quas expedita necessitatibus, ipsa eius. Eveniet rem suscipit pariatur cupiditate quaerat!"
+		},
+		{
+			"id": 2,
+			"inputId": "second",
+			"inputFor": "second",
+			"question": "¿Qué es C4E?",
+			"answer": "Harum labore ipsam consequuntur cum! Laboriosam excepturi dolores maxime dignissimos tenetur odio iure inventore consequuntur.Vero pariatur corrupti eos temporibus dolore repudiandae nobis dolorem aliquid fuga, ratione iure recusandae nisi itaque ab consectetur porro quas expedita necessitatibus, ipsa eius. Eveniet rem suscipit pariatur cupiditate quaerat!"
+		},
+		{
+			"id": 1,
+			"inputId": "third",
+			"inputFor": "third",
+			"question": "¿Qué es C4E?",
+			"answer": "Harum labore ipsam consequuntur cum! Laboriosam excepturi dolores maxime dignissimos tenetur odio iure inventore consequuntur.Vero pariatur corrupti eos temporibus dolore repudiandae nobis dolorem aliquid fuga, ratione iure recusandae nisi itaque ab consectetur porro quas expedita necessitatibus, ipsa eius. Eveniet rem suscipit pariatur cupiditate quaerat!"
+		},
+		{
+			"id": 1,
+			"inputId": "fourth",
+			"inputFor": "fourth",
+			"question": "¿Qué es C4E?",
+			"answer": "Harum labore ipsam consequuntur cum! Laboriosam excepturi dolores maxime dignissimos tenetur odio iure inventore consequuntur.Vero pariatur corrupti eos temporibus dolore repudiandae nobis dolorem aliquid fuga, ratione iure recusandae nisi itaque ab consectetur porro quas expedita necessitatibus, ipsa eius. Eveniet rem suscipit pariatur cupiditate quaerat!"
 		}
 	]
 }
