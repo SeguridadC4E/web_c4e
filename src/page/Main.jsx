@@ -1,6 +1,7 @@
 import './Main.css'
 import { Link } from 'react-router-dom'
 import CardsService from '../components/CardsService.jsx'
+import LogoScrolling from '../fragments/LogoScrolling.jsx'
 import { articles, about } from '../resources/data.json'
 
 const Main = () => {
@@ -87,8 +88,9 @@ const Main = () => {
         </div>
         <Link className='article-link' to='/contacto'>contactanos<span>&#10230;</span></Link>
       </section>
-      <section className='section-extra'>
-        <h3 className='section-extra-title'>extra</h3>
+      <section className='section-helper'>
+        <h3 className='section-helper-title'>Empresas que confian en c4e seguridad</h3>
+        <LogoScrolling />
       </section>
     </main>
   )

@@ -10,20 +10,20 @@ const LogoScrolling = () => {
   return (
     <div className='fragment-logos'>
       <div className='fragment-logos-slide'>
-        <img src={logoJena} alt='Image 3' />
         <img src={logoFarmaciasEconomicas} alt='Image 3' />
-        <img src={logoCruzAzul} alt='Image 3' />
         <img src={logoWesternUnion} alt='Image 3' />
-        <img src={logoUep} alt='Image 3' />
+        <img src={logoCruzAzul} alt='Image 3' />
         <img src={logoMykRectificadora} alt='Image 3' />
+        <img src={logoJena} alt='Image 3' />
+        <img src={logoUep} alt='Image 3' />
       </div>
       <div className='fragment-logos-slide'>
-        <img src={logoJena} alt='Image 3' />
         <img src={logoFarmaciasEconomicas} alt='Image 3' />
-        <img src={logoCruzAzul} alt='Image 3' />
         <img src={logoWesternUnion} alt='Image 3' />
-        <img src={logoUep} alt='Image 3' />
+        <img src={logoCruzAzul} alt='Image 3' />
         <img src={logoMykRectificadora} alt='Image 3' />
+        <img src={logoJena} alt='Image 3' />
+        <img src={logoUep} alt='Image 3' />
       </div>
     </div>
   )

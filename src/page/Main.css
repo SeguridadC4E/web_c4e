@@ -244,10 +244,6 @@
   transform: scale(1, 1);
 }
 
-.article-button{
-  max-width: 10.9375rem;
-}
-
 /*SECTION-ABOUT*/
 .section-about{
   background:rgba(194, 179, 163, 0.468);
@@ -343,9 +339,15 @@
 }
 
 /*SECTION-EXTRA*/
-.section-extra{
-
-  background: linear-gradient(#ffffff44, rgb(255, 255, 255));
-  height: 70vh;
+.section-helper{
+  padding-top: 5%;
 }
-.section-extra-title{}
+.section-helper-title{
+  text-align: center;
+  color: var(--color-text-title);
+  font-family: var(--type-title);
+  font-size: clamp(1.125rem, 3vw, 2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.75rem;
+}
