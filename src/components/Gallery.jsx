@@ -1,7 +1,9 @@
+import PageWork from './PageWork.jsx'
+
 const Gallery = () => {
   return (
     <div>
-      <p>🖼️ Esta Pagina tiene las imagenes de la empresa</p>
+      <PageWork />
     </div>
   )
 }
