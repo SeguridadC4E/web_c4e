@@ -25,7 +25,7 @@ const CardsServices = () => {
               <Link
                 to='/servicios/:id'
                 className='fragment-card-button'
-              >Seguir
+              >Conocer más
               </Link>
             </div>
           </article>

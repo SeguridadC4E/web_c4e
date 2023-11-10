@@ -196,7 +196,6 @@
   
   padding: .5em 1em;
   margin: 1em auto;
-  max-width: 10.9375em;
 }
 
 .article-link spang{
@@ -245,6 +244,9 @@
   transform: scale(1, 1);
 }
 
+.article-button{
+  max-width: 10.9375rem;
+}
 
 /*SECTION-ABOUT*/
 .section-about{
@@ -313,11 +315,32 @@
 
 /*SECTION-CONTACT*/
 .section-contact{
-  background: linear-gradient(rgba(183, 167, 151, 0.541), #ffffff44);
-  height: 70vh;
+  background: var(--color-box-shadow);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 1rem; */
+  padding: 5% 10%;
 }
-
-.section-contact-title{}
+.section-contact-div{
+  /* background:cyan; */
+  letter-spacing:.0625rem;
+}
+.section-contact-title{
+  color: var(--color-text-title);
+  font-family: var(--type-title);
+  font-size: clamp(1.125rem, 3vw, 2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.75rem;
+}
+.section-contact-p{
+  color: var(--color-text-paragraph);
+  font-size: clamp(.875rem, 1vw, 1.1875rem);
+  font-weight: 700;
+  padding-top: 1em;
+}
 
 /*SECTION-EXTRA*/
 .section-extra{

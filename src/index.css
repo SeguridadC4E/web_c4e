@@ -320,4 +320,11 @@ body {
   .section-about-info-body{
     padding: 1em;
   }
+  .section-contact{
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-contact-title{
+    padding-top: .9375rem;
+  }
 }

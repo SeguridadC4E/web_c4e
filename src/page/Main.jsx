@@ -79,8 +79,13 @@ const Main = () => {
         <h2 className='section-services-title'>nuestros servicios</h2>
         <CardsService />
       </section>
+      {/* section contact */}
       <section className='section-contact'>
-        <h3 className='section-contact-title'>contactanos</h3>
+        <div className='section-contact-div'>
+          <h2 className='section-contact-title'>Tienes interes por nuestros servicios</h2>
+          <p className='section-contact-p'>Solicita más información para conocer los beneficios de C4E SEGURIDAD</p>
+        </div>
+        <Link className='article-link' to='/contacto'>contactanos<span>&#10230;</span></Link>
       </section>
       <section className='section-extra'>
         <h3 className='section-extra-title'>extra</h3>
