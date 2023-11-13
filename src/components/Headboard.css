@@ -1,18 +1,18 @@
 .header{
-	color: var(--color-light-gray);
-	background-color: var(--color-logo-dark);
-	box-shadow: 0 .125rem .625rem 0 rgba(0,0,0,.4), 0 .125rem .3125rem 0 rgba(0,0,0,.2); 
+	color: var(--color-b);
+	background-color: var(--color-a);
+	box-shadow: 0 .125em .625em 0 var(--color-d), 0 .125em .3125em 0 var(--color-c);
 
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
 
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left:0;
-	padding: 0.5em 5%;
-	z-index: 1;
+	padding: 0.85em 5%;
+	z-index: 3;
 	width: 100%;
 }
 
@@ -26,8 +26,7 @@
 }
 .header-nav{}
 .header-ul{
-	color: var(--color-light-gray);
-	font-family: var(--tipo-principal1);
+	font-family: var(--type-title);
 	font-weight: 600;
 	font-size: .9375rem;
 
@@ -41,6 +40,6 @@
 
 .header-ul-li{
 	text-transform:uppercase;
-	letter-spacing: 0.0625em;
+	letter-spacing: .125rem;
 	margin: 0 0.5em;
 }
