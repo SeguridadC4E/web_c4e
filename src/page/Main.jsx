@@ -2,7 +2,7 @@ import './Main.css'
 import { Link } from 'react-router-dom'
 import CardsService from '../components/CardsService.jsx'
 import LogoScrolling from '../fragments/LogoScrolling.jsx'
-import { articles, about, faqs } from '../resources/data.json'
+import { articles, about, faqs, peopleSay } from '../resources/data.json'
 
 const Main = () => {
   return (
@@ -34,15 +34,6 @@ const Main = () => {
                   />
                   <h2 className='article-title'>{article.title}</h2>
                   <p className='article-text'>{article.description}</p>
-                  <Link
-                    className='article-link'
-                    to='/servicios'
-                    rel={article.rel}
-                    referrerPolicy={article.referrerpolicy}
-                    target={article.target}
-                  >
-                    leer más<span>&#10230;</span>
-                  </Link>
                 </section>
               </li>
             ))}
@@ -89,7 +80,7 @@ const Main = () => {
         <Link className='article-link' to='/contacto'>contactanos<span>&#10230;</span></Link>
       </section>
       <section className='section-helper'>
-        <h3 className='section-helper-title'>Empresas que confian en c4e seguridad</h3>
+        <h3 className='section-helper-title'>Empresas que confian en nosotros</h3>
         <LogoScrolling />
       </section>
       <section className='section-faq'>
@@ -106,6 +97,43 @@ const Main = () => {
               </div>
             </li>
           ))}
+        </ul>
+      </section>
+      <section className='section-testimonials'>
+        <header className='section-testimonial-header'>
+          <h3 className='section-testimonial-subtitle'>Testimonios</h3>
+          <h2 className='section-testimonial-title'>Lo que dicen la gente</h2>
+        </header>
+        <ul className='section-testimonial-container'>
+          {
+            peopleSay.map(say => (
+              <li className='testimonial-content' key={say.id}>
+                <article className='testimonial-content-article'>
+                  <header className='testimonial-content-article-header'>
+                    <img
+                      className='testimonial-content-article-header-img'
+                      src={say.svg}
+                      alt={say.svgAlter}
+                    />
+                  </header>
+                  <section className='testimonial-content-article-section'>
+                    <p className='testimonial-content-article-section-p'>{say.testimonial}</p>
+                  </section>
+                  <footer className='testimonial-content-article-footer'>
+                    <img
+                      className='testimonial-content-article-footer-img'
+                      src={say.image}
+                      alt={say.alter}
+                    />
+                    <div className='testimonial-content-article-footer-div'>
+                      <h3 className='testimonial-content-article-footer-div-h3'>{say.name}</h3>
+                      <h4 className='testimonial-content-article-footer-div-h4'>{say.title}</h4>
+                    </div>
+                  </footer>
+                </article>
+              </li>
+            ))
+          }
         </ul>
       </section>
     </main>

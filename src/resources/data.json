@@ -374,5 +374,57 @@
 			"question": "¿Qué es C4E?",
 			"answer": "Harum labore ipsam consequuntur cum! Laboriosam excepturi dolores maxime dignissimos tenetur odio iure inventore consequuntur.Vero pariatur corrupti eos temporibus dolore repudiandae nobis dolorem aliquid fuga, ratione iure recusandae nisi itaque ab consectetur porro quas expedita necessitatibus, ipsa eius. Eveniet rem suscipit pariatur cupiditate quaerat!"
 		}
+	],
+	"peopleSay":[
+		{
+			"id": 1,
+			"name": "Lorem Ipsu",
+			"title": "Gerente de la empresa Lorem",
+			"testimonial": "Lorem vero pariatur corrupti eos temporibus dolore repudiandae nobis dolorem aliquid fuga, ratione iure recusandae nisi itaque ab consectetur porro quas expedita necessitatibus, ipsa eius. Eveniet rem suscipit pariatur cupiditate quaerat!",
+			"svg": "/quotes.svg",
+			"svgAlter": "icono de las comillas en formato svg",
+			"image": "./avatar/avatar11.png",
+			"alter": "Imagen de la representante de la empresa Lorem"
+    },
+		{
+			"id": 2,
+			"name": "Lorem Ipsu",
+			"title": "Gerente de la empresa Lorem",
+			"testimonial": "Lorem vero pariatur corrupti eos temporibus dolore repudiandae nobis dolorem aliquid fuga, ratione iure recusandae nisi itaque ab consectetur porro quas expedita necessitatibus, ipsa eius. Eveniet rem suscipit pariatur cupiditate quaerat!",
+			"svg": "/quotes.svg",
+			"svgAlter": "icono de las comillas en formato svg",
+			"image": "./avatar/avatar11.png",
+			"alter": "Imagen de la representante de la empresa Lorem"
+    },
+		{
+			"id": 3,
+			"name": "Lorem Ipsu",
+			"title": "Gerente de la empresa Lorem",
+			"testimonial": "Lorem vero pariatur corrupti eos temporibus dolore repudiandae nobis dolorem aliquid fuga, ratione iure recusandae nisi itaque ab consectetur porro quas expedita necessitatibus, ipsa eius. Eveniet rem suscipit pariatur cupiditate quaerat!",
+			"svg": "/quotes.svg",
+			"svgAlter": "icono de las comillas en formato svg",
+			"image": "./avatar/avatar11.png",
+			"alter": "Imagen de la representante de la empresa Lorem"
+    },
+		{
+			"id": 4,
+			"name": "Lorem Ipsu",
+			"title": "Gerente de la empresa Lorem",
+			"testimonial": "Lorem vero pariatur corrupti eos temporibus dolore repudiandae nobis dolorem aliquid fuga, ratione iure recusandae nisi itaque ab consectetur porro quas expedita necessitatibus, ipsa eius. Eveniet rem suscipit pariatur cupiditate quaerat!",
+			"svg": "/quotes.svg",
+			"svgAlter": "icono de las comillas en formato svg",
+			"image": "./avatar/avatar11.png",
+			"alter": "Imagen de la representante de la empresa Lorem"
+    },
+		{
+			"id": 5,
+			"name": "Lorem Ipsu",
+			"title": "Gerente de la empresa Lorem",
+			"testimonial": "Lorem vero pariatur corrupti eos temporibus dolore repudiandae nobis dolorem aliquid fuga, ratione iure recusandae nisi itaque ab consectetur porro quas expedita necessitatibus, ipsa eius. Eveniet rem suscipit pariatur cupiditate quaerat!",
+			"svg": "/quotes.svg",
+			"svgAlter": "icono de las comillas en formato svg",
+			"image": "./avatar/avatar11.png",
+			"alter": "Imagen de la representante de la empresa Lorem"
+    }
 	]
 }

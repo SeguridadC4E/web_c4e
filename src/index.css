@@ -133,17 +133,9 @@
   --color-c:#8C8C8C;
   --color-d:#404040;
   --color-e:#0D0D0D;
-
-  --color-1:#616161;
-  --color-2:#F5F5F5;
-  --color-3:#9E9E9E;
-  --color-4:#212121;
-  --color-5:#607D8B;
-  --color-6:#212121;
-  --color-7:#757575;
-  --color-8:#BDBDBD;
+  --color-f:#BDBDBD;
+  --color-2:#ffffff;
   
-
   --color-dark-coffee: #400106;
   --color-logo-dark: #000002;
   --color-dark-tomato: #e63f41;
@@ -261,7 +253,7 @@ svg {
 
 /* Configuramos la tipografía para toda la web */
 body {
-  /* background: rgba(255, 255, 255, 0.938); */
+  background: var(--color-2);
   min-height: 100vh;
   font-size: 100%;
   font-family: var(--type-text);
@@ -342,5 +334,18 @@ body {
   }
   .section-contact-title{
     padding-top: .9375rem;
+  }
+
+  .section-faq{
+    /* height: 0; */
+  }
+  .section-testimonials{
+    padding: 5% 1%;
+  }
+  .testimonial-content-article-section{
+    padding: 0 10px;
+  }
+  .testimonial-content{
+    margin: 10px;
   }
 }
