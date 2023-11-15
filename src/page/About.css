@@ -1,44 +1,49 @@
-.page-about{}
+.about{}
 
-.page-about-header{
-  color: var(--color-text-image);
-  background-image: url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
-  background-size:cover;
-  background-repeat: no-repeat;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  padding: 3em 2em;
-
-  height: 100vh;
+.section-heroe{
+  padding: 10rem 3.5rem;
+  position: relative;
+}
+.heroe-big{
+  background: var(--color-d);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  overflow: hidden;
 }
 
-.page-about-header-div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  padding: 1em 0;
+.heroe-big-img{
+  width: 100%;
+  height: 101%;
+  opacity: .6;
+  object-fit: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
 }
 
-.page-about-header-title{
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: .0938rem;
-  text-transform: uppercase;
-  padding-top: 2em;
+.heroe-paragraph{
+  color: var(--color-b);
+  width: 100%;
+  max-width: clamp(100%, 50rem);
+  
 }
-
-.page-about-header-text{
+.heroe-paragraph-title{
   font-family:var(--font-family-phrase);
-  font-size: 1.125rem;
-  font-style: italic;
-  text-align: center;
-  width: 80%;
-  padding: 2em 0;
+  font-size: clamp(2.25rem, 8vw, 9.55rem);
+  font-weight: 800;
+  line-height: 1.5em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  
+  opacity: .99;
+  max-width: 15em;
 }
 
 .page-about-section-intro{
