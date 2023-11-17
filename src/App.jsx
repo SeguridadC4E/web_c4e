@@ -14,7 +14,7 @@ function App () {
       <Headboard />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='/sobre-nosotros' element={<About />} />
+        <Route path='/quienes-somos' element={<About />} />
         <Route path='/servicios' element={<Services />}>
           <Route path='/servicios/:id' element={<DetailServices />} />
         </Route>

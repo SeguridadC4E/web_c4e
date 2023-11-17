@@ -1,6 +1,6 @@
 .header{
 	color: var(--color-b);
-	background-color: var(--color-a);
+	background-color: var(--color-logo-dark);
 	box-shadow: 0 .125em .625em 0 var(--color-d), 0 .125em .3125em 0 var(--color-c);
 
 	display: flex;
