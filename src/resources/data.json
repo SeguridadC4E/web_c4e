@@ -48,7 +48,10 @@
 				"classNameTitle":"about-purpose-title-left",
 				"description": "Ser una empresa de seguridad privada líder, reconocida por su inquebrantable credibilidad y confiabilidad. Nos dedicamos a salvaguarda bienes, muebles e inmuebles, así como la seguridad de empresas y personas. Lo hacemos empleando recursos profesionales altamente capacitados y tecnología, incluyendo sistemas de seguridad electrónica y monitoreo constante las 24 horas del día. Nuestro compromiso es brindar a nuestros clientes la tranquilidad necesaria para que puedan llevar a cabo sus actividades cotidianas con total confianza en su seguridad.",
 				"classNameDescription":"about-purpose-description-left",
-				"img": "https://images.unsplash.com/photo-1517913451214-e22ce660e086?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1946&q=80",
+				"author": "Ben White",
+				"nick": "@benwhitephotography",
+				"link": "https://unsplash.com/es/@benwhitephotography",
+				"img": "https://images.unsplash.com/photo-1492269815085-88eb3ffe14e5?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 				"imgDescription": "image idealizada de nuestra misión",
 				"className":"about-purpose-img-left"
 			},

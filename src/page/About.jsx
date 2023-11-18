@@ -1,5 +1,4 @@
 import './About.css'
-import trustAbout from './../assets/img-content/trust-about.jpg'
 import { about } from '../resources/data.json'
 
 const About = () => {
@@ -39,7 +38,7 @@ const About = () => {
           <footer className='about-article-footer'>
             <img
               className='about-article-footer-img'
-              src={trustAbout}
+              src='https://images.unsplash.com/photo-1686771416282-3888ddaf249b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
               alt='image abot'
             />
           </footer>
@@ -48,17 +47,17 @@ const About = () => {
       <section className='section-about-purpose'>
         {information.map(data => (
           <li
-            className='about-section-card'
+            className='about-section-purpose-card'
             key={data.id}
           >
-            <article>
+            <article className='about-section-purpose-article'>
               <header className={data.classNameTitle}>
                 <h2>{data.title}</h2>
               </header>
               <div className={data.classNameDescription}>
                 <p>{data.description}</p>
               </div>
-              <footer className={data.classNameImg}>
+              <footer className={data.className}>
                 <img src={data.img} alt={data.imgDescription} />
               </footer>
             </article>
