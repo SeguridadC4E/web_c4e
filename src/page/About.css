@@ -88,7 +88,7 @@
 }
 .about-article-section{
   color: var(--color-c);
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(15px, 2vw, 18px);
 }
 .about-article-section-line{
   border-bottom: 2px solid var(--color-b);
@@ -144,7 +144,7 @@
 }
 .about-purpose-description-left{
   color: var(--color-c);
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(15px, 2vw, 18px);
   font-weight: 500;
   
   grid-column-start: 2;
@@ -163,7 +163,7 @@
 }
 .about-purpose-description-right{
   color: var(--color-c);
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(15px, 2vw, 18px);
   font-weight: 500;
 
   grid-column-start: 1;
