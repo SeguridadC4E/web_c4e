@@ -13,31 +13,31 @@ const Headboard = () => {
   return (
     <header className='header'>
       <Logo />
-      <button
+      <div
         onClick={toggleMenu}
-        className='header-menu'
+        className='header__button'
       >
         <img
-          className='header-menu-svg'
+          className='header__svg'
           src={menuHamburger}
           alt='icono del boton de menu de navegacion'
         />
-      </button>
-      <nav className={`header-nav ${menu ? 'isActive' : ''}`}>
-        <ul className='header-ul'>
-          <li className='header-ul-li'>
+      </div>
+      <nav className={`header__nav ${menu ? 'isActive' : ''}`}>
+        <ul className='header__ul'>
+          <li className='header__li'>
             <Link to='/'> Inicio</Link>
           </li>
-          <li className='header-ul-li'>
+          <li className='header__li'>
             <Link to='/quienes-somos'>¿Quiénes Somos?</Link>
           </li>
-          <li className='header-ul-li'>
+          <li className='header__li'>
             <Link to='/servicios'>Servicios</Link>
           </li>
-          <li className='header-ul-li'>
+          <li className='header__li'>
             <Link to='/galeria'>Galeria</Link>
           </li>
-          <li className='header-ul-li'>
+          <li className='header__li'>
             <Link to='/contacto'>Contacto</Link>
           </li>
         </ul>
