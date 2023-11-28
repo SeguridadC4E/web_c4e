@@ -14,7 +14,7 @@
 	
 	padding: 0.85em 5%;
 	width: 100%;
-	z-index: 1;
+	z-index: 5;
 
 	animation: header-animation linear both;
 	animation-timeline: scroll(root block);
@@ -24,7 +24,6 @@
 
 .header__button{
 	display: none;
-	/* flex-direction: column; */
 	cursor: pointer;
 }
 .header__svg{ 
@@ -36,13 +35,10 @@
 	flex-direction: row;
 }
 .header__ul{
-	/* font-family: var(--type-title); */
 	font-weight: 600;
 	font-size: clamp(.875rem, 1vw, .9375rem);
 	
 	display:flex;
-	/* flex-flow: row nowrap;
-	justify-content:flex-end; */
 	align-items:center;
 	
 	padding:0 1em;

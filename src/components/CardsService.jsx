@@ -3,29 +3,29 @@ import { Link } from 'react-router-dom'
 import { cardServices } from '../resources/data.json'
 
 const CardsServices = () => {
-  // console.log(cardServices)
   return (
-    <ul className='fragment-card-ul'>
+    <ul className='card'>
       {cardServices.map((card) =>
         <li
-          className='fragment-card-container'
+          className='card__container'
           key={card?.id}
         >
-          <article className='fragment-card-article'>
-            <img
-              className='fragment-card-img'
-              src={card?.image.imageService}
-              alt={card?.image.imageAlter}
-            />
-            <div className='fragment-card-data'>
-              {/* <span className='fragment-card-description' /> */}
-              <h2 className='fragment-card-title'>
+          <article className='card__article'>
+            <div className='card__content-img'>
+              <img
+                className='card__img'
+                src={card?.image.imageService}
+                alt={card?.image.imageAlter}
+              />
+            </div>
+            <div className='card__data'>
+              <h2 className='card__title'>
                 {card?.service.subtitle}
               </h2>
               <Link
                 to='/servicios/:id'
-                className='fragment-card-button'
-              >Conocer más
+                className='card__button'
+              >{card?.service.object}
               </Link>
             </div>
           </article>

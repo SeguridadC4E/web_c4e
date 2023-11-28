@@ -1,96 +1,211 @@
 import './Main.css'
 import { Link } from 'react-router-dom'
-import CardsService from '../components/CardsService.jsx'
-import LogoScrolling from '../fragments/LogoScrolling.jsx'
-import { articles, about, faqs, peopleSay } from '../resources/data.json'
+import { articles, about, faqs, peopleSay, cardServices } from '../resources/data.json'
+// import CardsService from '../components/CardsService.jsx'
+// import LogoScrolling from '../fragments/LogoScrolling.jsx'
+import ServiceTitleScrolling from '../fragments/ServiceTitleScrolling.jsx'
+import logoCruzAzul from './../assets/image-partners/f-cruz-azul.jpg'
+import logoFarmaciasEconomicas from './../assets/image-partners/farmacias-economicas.png'
+import logoJena from './../assets/image-partners/jena.png'
+import logoMykRectificadora from './../assets/image-partners/myk-rectificadora.png'
+import logoUep from './../assets/image-partners/uep.jpg'
+import logoWesternUnion from './../assets/image-partners/western-union.png'
 
 const Main = () => {
   return (
-    <main className='main'>
-      {/* section de la portada */}
-      <section className='section-front'>
-        <div>
-          <p className='section-front-p'>nosotros somos</p>
-          <h1 className='section-front-h1'>c4e cuji seguridad del ecuador cia. ltda.</h1>
-          <p className='section-front-text'>Brindamos protección a residencias, locales comerciales, instalamos sistemas de seguridad</p>
-          <Link to='/servicios' className='section-front-button btn-animation'>leer más<span>&#10230;</span></Link>
+    <main className='main' title='Inicio'>
+
+      {/* SECTION HEROE */}
+      <section className='hero'>
+        <div className='hero__content'>
+          <p className='hero__name'>Empresa de</p>
+          <h1 className='hero__title'>seguridad
+          </h1>
+          <h2 className='hero__span'>privada <span className='hero__span-quote'>■</span>____</h2>
+          <p className='hero__text'>"Tu mejor alternativa en seguridad para eventos sociales, protección personal, tu hogar, tu empresa."</p>
+          <Link to='/servicios' className='hero__button btn-animation'>leer más<span>&#10230;</span></Link>
+        </div>
+        <div className='hero__content hero__content-img'>
+          <img className='hero__img' src='/Private-security.jpg' alt='imagen de la portada' />
         </div>
       </section>
-      {/* section modelo de negocio */}
-      <section className='section-legend'>
-        <article className='section-legend-article'>
-          <header className='legend-article-header'>
-            <h2 className='section-legend-title'>c4e seguridad</h2>
-            <h3 className='section-legend-subtitle'>Tu mejor alternativa en temas de seguridad</h3>
-          </header>
-          <ul className='section-ul'>
+
+      <ServiceTitleScrolling />
+
+      {/* SECTION INTRO */}
+      <section className='intro'>
+        <p className='information__name'>un poco de nosotros</p>
+        <section className='intro__container'>
+          <div className='intro__content'>
+            <img
+              className='intro__img'
+              src={about.img}
+              alt={about.alter}
+            />
+          </div>
+          <div className='intro__content-text'>
+            <p className='intro__text'>{about.text1}</p>
+            <Link
+              to='/sobre-nosotros'
+              className='hero__button btn-animation'
+              referrerPolicy={about.referrerpolicy}
+              target={about.target}
+              rel={about.rel}
+            >leer más<span>&#10230;</span>
+            </Link>
+          </div>
+        </section>
+        <article className='information'>
+          <p className='information__name'>nuestros intereses</p>
+          <ul className='information__ul'>
             {articles.map(article => (
-              <li key={article.id} className='section-ul-li'>
+              <li key={article.id} className='information__li'>
                 <section className='article'>
-                  <img
-                    className='article-img'
-                    src={article.img}
-                    alt={article.alter}
-                  />
-                  <h2 className='article-title'>{article.title}</h2>
-                  <p className='article-text'>{article.description}</p>
+                  <header className='article__header'>
+                    <img
+                      className='article__img'
+                      src={article.img}
+                      alt={article.alter}
+                    />
+                    <h2 className='article__title'>{article.title}</h2>
+                  </header>
+                  <p className='article__text'>{article.description}</p>
                 </section>
               </li>
             ))}
           </ul>
         </article>
       </section>
-      {/* section about */}
-      <section className='section-about'>
-        <div className='section-container'>
-          <img
-            className='section-about-image'
-            src={about.img}
-            alt={about.alter}
-          />
-          <article className='section-about-info'>
-            <header className='section-about-info-header'>
-              <h2 className='section-about-info-header-h1'>{about.title}</h2>
-            </header>
-            <section className='section-about-info-body'>
-              <p className='section-about-info-body-p'>{about.text1}</p>
-              <Link
-                to='/sobre-nosotros'
-                className='article-link'
-                referrerPolicy={about.referrerpolicy}
-                target={about.target}
-                rel={about.rel}
-              >leer más<span>&#10230;</span>
-              </Link>
-            </section>
-          </article>
-        </div>
+
+      {/* SECTION SERVICES */}
+      <section className='services'>
+        <h2 className='services__title'>nuestros servicios</h2>
+        {/* <CardsService /> */}
+        <section className='service-wrap'>
+          <ul className='service-card'>
+            {cardServices.map((service) =>
+              <li
+                className='service-card__container'
+                key={service?.id}
+              >
+                <div className='service-card__card-content'>
+                  <img
+                    className='service-card__img'
+                    src={service?.image.imageService}
+                    alt={service?.image.imageAlter}
+                  />
+                </div>
+                <div className='service-card__data'>
+                  <h2 className='service-card__title'>
+                    {service?.service.subtitle}
+                  </h2>
+                  <Link
+                    to='/servicios'
+                    className='service-card__button'
+                  >{service?.service.object}
+                    <span className='service-card__span'>
+                      &#10230;
+                    </span>
+                  </Link>
+                </div>
+              </li>
+            )}
+          </ul>
+        </section>
       </section>
-      {/* section services */}
-      <section className='section-services'>
-        <h2 className='section-services-title'>nuestros servicios</h2>
-        <CardsService />
-      </section>
-      {/* section contact */}
-      <section className='section-contact'>
-        <div className='section-contact-div'>
-          <h2 className='section-contact-title'>Tienes interes por nuestros servicios</h2>
-          <p className='section-contact-p'>Solicita más información para conocer los beneficios de C4E SEGURIDAD</p>
-        </div>
-        <Link className='article-link' to='/contacto'>contactanos<span>&#10230;</span></Link>
-      </section>
+
+      {/* SECTION HELPERS */}
       <section className='section-helper'>
-        <h3 className='section-helper-title'>Empresas que confian en nosotros</h3>
-        <LogoScrolling />
+        <h3 className='section-helper__title'>empresas que confian en nosotros</h3>
+        <div className='secyion-helper__wrap'>
+          <ul className='section-helper__container'>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoFarmaciasEconomicas} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoWesternUnion} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoCruzAzul} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoMykRectificadora} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoJena} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoUep} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoFarmaciasEconomicas} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoWesternUnion} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoCruzAzul} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoMykRectificadora} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoJena} alt='Image 3'
+              />
+            </li>
+            <li className='section-helper__content'>
+              <img
+                className='section-helper__img'
+                src={logoUep} alt='Image 3'
+              />
+            </li>
+          </ul>
+        </div>
       </section>
+
+      {/* SECTION FAQ */}
       <section className='section-faq'>
-        <h3 className='section-faq-title'>Preguntas frecuentes</h3>
-        <ul className='accordion'>
+        <h2 className='section-faq__title'>Preguntas frecuentes</h2>
+        <ul className='section-faq__tab'>
           {faqs.map(faq => (
             <li key={faq.id}>
-              <input type='radio' name='accordion' id={faq.inputId} checked />
-              <label for={faq.inputFor}>{faq.question}</label>
-              <div className='content'>
+              <input type='radio' name='acc' id={faq.inputId} />
+              <label for={faq.inputFor}>
+                <h2>{faq.question}</h2>
+              </label>
+              <div className='section-faq__content'>
                 <p>
                   {faq.answer}
                 </p>
@@ -99,35 +214,36 @@ const Main = () => {
           ))}
         </ul>
       </section>
+
+      {/* SECTION TESTIMONIAL */}
       <section className='section-testimonials'>
-        <header className='section-testimonial-header'>
-          <h3 className='section-testimonial-subtitle'>Testimonios</h3>
-          <h2 className='section-testimonial-title'>Lo que dicen la gente</h2>
+        <header className='section-testimonial__header'>
+          <h2 className='section-testimonial__title'>Testimonios</h2>
         </header>
-        <ul className='section-testimonial-container'>
+        <ul className='section-testimonial__container'>
           {
             peopleSay.map(say => (
-              <li className='testimonial-content' key={say.id}>
-                <article className='testimonial-content-article'>
-                  <header className='testimonial-content-article-header'>
+              <li className='section-testimonial__content' key={say.id}>
+                <article className='section-testimonial__content-article'>
+                  <header className='section-testimonial__content-header'>
                     <img
-                      className='testimonial-content-article-header-img'
+                      className='section-testimonial__content-img'
                       src={say.svg}
                       alt={say.svgAlter}
                     />
                   </header>
-                  <section className='testimonial-content-article-section'>
-                    <p className='testimonial-content-article-section-p'>{say.testimonial}</p>
+                  <section className='section-testimonial__content-section'>
+                    <p className='section-testimonial__content-p'>{say.testimonial}</p>
                   </section>
-                  <footer className='testimonial-content-article-footer'>
+                  <footer className='section-testimonial__content-footer'>
                     <img
-                      className='testimonial-content-article-footer-img'
+                      className='section-testimonial__content-footer-img'
                       src={say.image}
                       alt={say.alter}
                     />
-                    <div className='testimonial-content-article-footer-div'>
-                      <h3 className='testimonial-content-article-footer-div-h3'>{say.name}</h3>
-                      <h4 className='testimonial-content-article-footer-div-h4'>{say.title}</h4>
+                    <div className='section-testimonial__content-footer-div'>
+                      <h3 className='section-testimonial__content-footer-h3'>{say.name}</h3>
+                      <h4 className='section-testimonial__content-footer-h4'>{say.title}</h4>
                     </div>
                   </footer>
                 </article>
@@ -135,6 +251,15 @@ const Main = () => {
             ))
           }
         </ul>
+      </section>
+
+      {/* SECTION CONTACT */}
+      <section className='section-contact'>
+        <div className='section-contact-div'>
+          <h2 className='section-contact-title'>Tienes interes por nuestros servicios</h2>
+          <p className='section-contact-p'>Solicita más información para conocer los beneficios de C4E SEGURIDAD</p>
+        </div>
+        <Link className='article-link' to='/contacto'>contactanos<span>&#10230;</span></Link>
       </section>
     </main>
   )
