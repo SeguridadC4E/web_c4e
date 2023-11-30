@@ -399,8 +399,16 @@ body {
     grid-row:3;
     padding: 0 1%;
   }
-  .about-purpose-img-right img{  }
 
+  /*SECTION-CONTACT*/
+  .section-contact__header{
+    text-align:center;
+  }
+  .section-contact__content-data{
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 100px;
+  }
+  
 
 }
 
